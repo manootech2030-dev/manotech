@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANOO Tech | Premier Mobile & Web Software Engineering</title>
+  <meta name="description" content="MANOO Tech is an elite technology studio specializing in native Android apps, web platforms, and Google Play publication. Discover MuziPlay and Brixy Match-3.">
+  <meta name="keywords" content="Manoo Tech, MuziPlay, Brixy, Android Apps, Web Development, Google Play, Closed Testing, Software Studio">
+  <meta name="author" content="MANOO Tech">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MANOO Tech | Technology & Software Development">
+  <meta property="og:description" content="Engineering high-impact web solutions and native Android apps published on Google Play.">
+  <meta property="og:image" content="assets/images/logo-banner.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Cyber Particles -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <canvas id="matrixCanvas"></canvas>
+
+  <!-- ==========================================================================
+       Navigation Bar
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand-logo" id="nav-brand" aria-label="MANOO Tech Home">
+        <img src="assets/images/logo-icon.png" alt="MANOO Tech Logo" class="brand-icon-img">
+        <div class="brand-text-group" dir="ltr">
+          <span class="brand-name" dir="ltr"><bdi>MANOO</bdi> <span class="gradient-cyan"><bdi>Tech</bdi></span></span>
+          <span class="brand-tagline" dir="ltr"><bdi>Software &amp; Apps Studio</bdi></span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+          <li><a href="#apps" class="nav-link" data-i18n="nav_apps">Flagship Apps</a></li>
+          <li><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+          <li><a href="#pipeline" class="nav-link" data-i18n="nav_pipeline">Pipeline</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher Toggle -->
+        <button class="nav-tool-btn" id="langToggleBtn" aria-label="Toggle Language" title="Switch Language">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span id="langBtnText">العربية</span>
+        </button>
+
+        <!-- Theme Switcher Toggle (Dark / Platinum Light) -->
+        <button class="nav-tool-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode">
+          <span id="themeToggleIcon">
+            <svg class="theme-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <a href="#contact" class="btn-primary" id="nav-cta-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <span data-i18n="nav_cta">Get In Touch</span>
+        </a>
+
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section (Streamlined & De-Cluttered)
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero_title">
+              Turning <span class="gradient-text">Inspiring Ideas</span> Into <span class="gradient-cyan">Living Experiences</span> On Your Screen
+            </h1>
+
+            <p class="hero-subtitle" data-i18n="hero_subtitle">
+              MANOO Tech designs, develops, and deploys high-performance Android applications and scalable modern web platforms. From cutting-edge media engines to casual game architectures, we bring robust software to life.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#apps" class="btn-primary" id="hero-explore-btn">
+                <span data-i18n="hero_explore_btn">Explore Flagship Apps</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn-secondary" id="hero-contact-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span data-i18n="hero_contact_btn">Get In Touch</span>
+              </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <div class="stat-value"><span class="stat-number" data-target="2" data-suffix="+">2</span></div>
+                <div class="stat-label" data-i18n="stat_releases">Play Store Releases</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value"><span class="stat-number" data-target="100" data-suffix="%">100</span></div>
+                <div class="stat-label" data-i18n="stat_perf">Native Performance</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value"><span class="stat-number" data-target="99" data-suffix=".9%">99.9</span></div>
+                <div class="stat-label" data-i18n="stat_uptime">Architecture Stability</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Sleek Uncluttered Brand Showcase -->
+          <div class="hero-visual">
+            <div class="hero-visual-card">
+              <div class="card-top-header">
+                <div class="terminal-dots">
+                  <span class="terminal-dot dot-red"></span>
+                  <span class="terminal-dot dot-yellow"></span>
+                  <span class="terminal-dot dot-green"></span>
+                </div>
+                <div class="tech-system-status">
+                  <span class="blink-circle"></span> MANOOTECH-CORE::v2.6
+                </div>
+              </div>
+
+              <!-- Official Clean Banner -->
+              <div class="brand-banner-preview">
+                <img src="assets/images/logo-banner.jpg" alt="MANOO Tech - Technology & Software Development">
+              </div>
+
+              <!-- Clean Minimal Footer Caption -->
+              <div class="banner-footer-caption">
+                <span data-i18n="visual_caption_tag">Official Tech Suite</span>
+                <span data-i18n="visual_caption_sub">Production & Closed Testing Hub</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Tech Stack Bar
+         ========================================================================== -->
+    <section class="tech-stack-section">
+      <div class="container">
+        <div class="tech-marquee-title">Core Engineering & Deployment Technologies</div>
+        <div class="tech-icons-row">
+          <div class="tech-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            <span>Android Native</span>
+          </div>
+          <div class="tech-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            <span>Kotlin & Compose</span>
+          </div>
+          <div class="tech-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            <span>ExoPlayer & DSP Engine</span>
+          </div>
+          <div class="tech-pill">
+            <svg width="18" height="18" viewBox="0 0 28.99 31.99" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.54 15.28.12 29.34a3.66 3.66 0 0 0 5.33 2.16l15.1-8.6Z" fill="#ea4335"/>
+              <path d="m27.11 12.89-6.53-3.74-7.35 6.45 7.38 7.28 6.48-3.7a3.54 3.54 0 0 0 1.5-4.79 3.62 3.62 0 0 0-1.5-1.5z" fill="#fbbc04"/>
+              <path d="M.12 2.66a3.57 3.57 0 0 0-.12.92v24.84a3.57 3.57 0 0 0 .12.92L14 15.64Z" fill="#4285f4"/>
+              <path d="m13.64 16 6.94-6.85L5.5.51A3.73 3.73 0 0 0 3.63 0 3.64 3.64 0 0 0 .12 2.65Z" fill="#34a853"/>
+            </svg>
+            <span>Google Play Console</span>
+          </div>
+          <div class="tech-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span>Modern Web Platforms</span>
+          </div>
+          <div class="tech-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            <span>Cloud & Firebase</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Flagship Products Showcase
+         ========================================================================== -->
+    <section class="apps-section" id="apps">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="pulse-dot"></span>
+            <span data-i18n="apps_section_badge">Flagship Android Portfolio</span>
+          </div>
+          <h2 class="section-title" data-i18n="apps_section_title">Engineered For Performance & High User Engagement</h2>
+          <p class="section-desc" data-i18n="apps_section_desc">
+            Explore our state-of-the-art mobile applications currently published on the Google Play Store closed track.
+          </p>
+        </div>
+
+        <!-- APP 1: MUZIPLAY -->
+        <article class="app-showcase-card app-muziplay-theme" id="app-muziplay">
+          <div class="app-card-grid">
+            
+            <!-- Left Info -->
+            <div class="app-details-col">
+              <div class="app-brand-row">
+                <img src="assets/images/muziplay-icon.jpg" alt="MuziPlay Official App Icon" class="app-master-icon">
+                <div class="app-badge-box">
+                  <span class="app-type-tag" data-i18n="muziplay_type">Media Streaming & Audio DSP</span>
+                  <div class="testing-status-badge live-status">
+                    <span class="badge-dot" style="background: #10b981; box-shadow: 0 0 8px #10b981;"></span>
+                    <span data-i18n="app_status_live">Google Play Release</span>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="app-card-title" data-i18n="muziplay_title">
+                MuziPlay <span class="subtitle-dim">— Ultimate All-in-One Media Hub</span>
+              </h3>
+
+              <p class="app-card-desc" data-i18n="muziplay_desc">
+                MuziPlay seamlessly integrates an ad-free streaming browser with a high-velocity universal media downloader, synchronized lyrics, and an offline studio-grade DSP audio player with Equalizer Pro and Smart Audio Isolation.
+              </p>
+
+              <div class="features-bullet-grid">
+                <div class="feature-bullet-item">
+                  <svg class="feature-icon-bullet" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="muzi_f1"><strong>Ad-Free Streaming & Downloader:</strong> Fetch videos & audio on the fly with zero ads.</span>
+                </div>
+                <div class="feature-bullet-item">
+                  <svg class="feature-icon-bullet" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="muzi_f2"><strong>Live Synced Lyrics:</strong> Real-time lyrics scrolling with instant copy & karaoke sync.</span>
+                </div>
+                <div class="feature-bullet-item">
+                  <svg class="feature-icon-bullet" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="muzi_f3"><strong>Equalizer Pro & Spatial FX:</strong> Studio-grade 3D audio, bass booster, and frequency tuning.</span>
+                </div>
+                <div class="feature-bullet-item">
+                  <svg class="feature-icon-bullet" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="muzi_f4"><strong>Smart Audio Isolation:</strong> Filter vocals and isolate instrumentals on device.</span>
+                </div>
+              </div>
+
+              <!-- Package ID box -->
+              <div class="package-id-box" dir="ltr">
+                <div>Package ID: <code>com.aistudio.muziplay.xnxfyx</code></div>
+                <button class="copy-id-btn" data-copy="com.aistudio.muziplay.xnxfyx" title="Copy Package ID">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- Action buttons -->
+              <div class="app-actions-row">
+                <a href="https://play.google.com/store/apps/details?id=com.aistudio.muziplay.xnxfyx" target="_blank" rel="noopener noreferrer" class="btn-primary app-play-btn">
+                  <svg width="20" height="20" viewBox="0 0 28.99 31.99" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.54 15.28.12 29.34a3.66 3.66 0 0 0 5.33 2.16l15.1-8.6Z" fill="#ea4335"/>
+                    <path d="m27.11 12.89-6.53-3.74-7.35 6.45 7.38 7.28 6.48-3.7a3.54 3.54 0 0 0 1.5-4.79 3.62 3.62 0 0 0-1.5-1.5z" fill="#fbbc04"/>
+                    <path d="M.12 2.66a3.57 3.57 0 0 0-.12.92v24.84a3.57 3.57 0 0 0 .12.92L14 15.64Z" fill="#4285f4"/>
+                    <path d="m13.64 16 6.94-6.85L5.5.51A3.73 3.73 0 0 0 3.63 0 3.64 3.64 0 0 0 .12 2.65Z" fill="#34a853"/>
+                  </svg>
+                  <span data-i18n="app_btn_play">Get on Google Play</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Visual Phone Mockup -->
+            <div class="app-mockup-wrapper preview-tabs-container">
+              <div class="phone-mockup-frame">
+                <div class="phone-camera-island"></div>
+                <div class="phone-inner-screen">
+                  <img id="muziplayScreenImg" src="assets/images/muziplay-player.png" alt="MuziPlay Real Android App Interface - Music Player">
+                </div>
+              </div>
+              <!-- Interactive Screen Tabs -->
+              <div class="preview-tabs">
+                <button type="button" class="preview-tab-btn active" onclick="switchScreenshot('muziplayScreenImg', 'assets/images/muziplay-player.png', this)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                  <span>Player</span>
+                </button>
+                <button type="button" class="preview-tab-btn" onclick="switchScreenshot('muziplayScreenImg', 'assets/images/muziplay-lyrics.png', this)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                  <span>Live Lyrics</span>
+                </button>
+                <button type="button" class="preview-tab-btn" onclick="switchScreenshot('muziplayScreenImg', 'assets/images/muziplay-settings.png', this)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                  <span>DSP Settings</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- APP 2: BRIXY MATCH-3 -->
+        <article class="app-showcase-card app-brixy-theme" id="app-brixy">
+          <div class="app-card-grid reverse-layout">
+            
+            <!-- Left Visual Phone Mockup -->
+            <div class="app-mockup-wrapper preview-tabs-container">
+              <div class="phone-mockup-frame">
+                <div class="phone-camera-island"></div>
+                <div class="phone-inner-screen">
+                  <img id="brixyScreenImg" src="assets/images/brixy-gameplay.png" alt="Brixy Match-3 Real Gameplay Screen">
+                </div>
+              </div>
+              <!-- Interactive Screen Tabs -->
+              <div class="preview-tabs">
+                <button type="button" class="preview-tab-btn active" onclick="switchScreenshot('brixyScreenImg', 'assets/images/brixy-gameplay.png', this)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                  <span>Gameplay Board</span>
+                </button>
+                <button type="button" class="preview-tab-btn" onclick="switchScreenshot('brixyScreenImg', 'assets/images/brixy-menu.png', this)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  <span>Adventure Menu</span>
+                </button>
+                <button type="button" class="preview-tab-btn" onclick="switchScreenshot('brixyScreenImg', 'assets/images/brixy-levels.png', this)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+                  <span>Stage Map</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Info -->
+            <div class="app-details-col">
+              <div class="app-brand-row">
+                <img src="assets/images/brixy-icon.jpg" alt="Brixy Official App Icon" class="app-master-icon">
+                <div class="app-badge-box">
+                  <span class="app-type-tag" style="color: #f472b6;" data-i18n="brixy_type">Arcade & Brain Casual Gaming</span>
+                  <div class="testing-status-badge live-status">
+                    <span class="badge-dot" style="background: #f472b6; box-shadow: 0 0 8px #f472b6;"></span>
+                    <span data-i18n="app_status_live">Google Play Release</span>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="app-card-title" data-i18n="brixy_title">
+                Brixy <span class="subtitle-dim">— Sweet Candy &amp; Fruit Match-3 Adventure</span>
+              </h3>
+
+              <p class="app-card-desc" data-i18n="brixy_desc">
+                Embark on a delightful candy &amp; fruit matching adventure with Brixy! Match vibrant drops and sweets, blast through obstacles with hammers, rockets, and bombs, and conquer hundreds of handcrafted levels at fluid 60 FPS.
+              </p>
+
+              <div class="features-bullet-grid">
+                <div class="feature-bullet-item">
+                  <svg class="feature-icon-bullet" style="color: #f472b6;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="brixy_f1"><strong>Addictive Match-3 Mechanics:</strong> Satisfying cascades with candies, drops, and obstacles.</span>
+                </div>
+                <div class="feature-bullet-item">
+                  <svg class="feature-icon-bullet" style="color: #f472b6;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="brixy_f2"><strong>Super Boosters:</strong> Rockets, explosive bombs, hammers, and board-clearing fish.</span>
+                </div>
+                <div class="feature-bullet-item">
+                  <svg class="feature-icon-bullet" style="color: #f472b6;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="brixy_f3"><strong>Exciting Progression Map:</strong> Conquer hundreds of stages and collect 3-star ratings.</span>
+                </div>
+                <div class="feature-bullet-item">
+                  <svg class="feature-icon-bullet" style="color: #f472b6;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="brixy_f4"><strong>Native 60 FPS Performance:</strong> Ultra-responsive touch physics and optimized battery usage.</span>
+                </div>
+              </div>
+
+              <!-- Package ID box -->
+              <div class="package-id-box" dir="ltr">
+                <div>Package ID: <code>com.aistudio.brixy.kwxyzq</code></div>
+                <button class="copy-id-btn" data-copy="com.aistudio.brixy.kwxyzq" title="Copy Package ID">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- Action buttons -->
+              <div class="app-actions-row">
+                <a href="https://play.google.com/store/apps/details?id=com.aistudio.brixy.kwxyzq" target="_blank" rel="noopener noreferrer" class="btn-primary app-play-btn" style="background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);">
+                  <svg width="20" height="20" viewBox="0 0 28.99 31.99" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.54 15.28.12 29.34a3.66 3.66 0 0 0 5.33 2.16l15.1-8.6Z" fill="#ea4335"/>
+                    <path d="m27.11 12.89-6.53-3.74-7.35 6.45 7.38 7.28 6.48-3.7a3.54 3.54 0 0 0 1.5-4.79 3.62 3.62 0 0 0-1.5-1.5z" fill="#fbbc04"/>
+                    <path d="M.12 2.66a3.57 3.57 0 0 0-.12.92v24.84a3.57 3.57 0 0 0 .12.92L14 15.64Z" fill="#4285f4"/>
+                    <path d="m13.64 16 6.94-6.85L5.5.51A3.73 3.73 0 0 0 3.63 0 3.64 3.64 0 0 0 .12 2.65Z" fill="#34a853"/>
+                  </svg>
+                  <span data-i18n="app_btn_play">Get on Google Play</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+
+    <!-- ==========================================================================
+         Services & Engineering Capabilities
+         ========================================================================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="pulse-dot"></span>
+            <span data-i18n="services_badge">Comprehensive Solutions</span>
+          </div>
+          <h2 class="section-title" data-i18n="services_title">End-to-End Technology & Software Development</h2>
+          <p class="section-desc" data-i18n="services_desc">
+            We partner with businesses, creators, and innovators to architect, code, and deploy mission-critical software solutions.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3 class="service-card-title" data-i18n="service_1_title">Android Mobile Apps</h3>
+            <p class="service-card-desc" data-i18n="service_1_desc">
+              High-efficiency Android applications built with Kotlin and Jetpack Compose. Clean architecture, battery-conscious background workers, and seamless OS integrations.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">Kotlin</span>
+              <span class="service-tag">Jetpack Compose</span>
+              <span class="service-tag">Material 3</span>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="service-card-title" data-i18n="service_2_title">Custom Web Platforms</h3>
+            <p class="service-card-desc" data-i18n="service_2_desc">
+              Responsive corporate websites, interactive dashboards, and SaaS applications with lightning load times, modern aesthetics, and rock-solid SEO performance.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">Modern Web</span>
+              <span class="service-tag">SaaS UI/UX</span>
+              <span class="service-tag">High Performance</span>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3 class="service-card-title" data-i18n="service_3_title">Play Store Publishing</h3>
+            <p class="service-card-desc" data-i18n="service_3_desc">
+              Complete management of the Google Play Console lifecycle: policy compliance, closed testing cohort recruitment, store listing ASO, and production rollout.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">Play Console</span>
+              <span class="service-tag">Closed Testing</span>
+              <span class="service-tag">ASO</span>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <h3 class="service-card-title" data-i18n="service_4_title">Media & Audio DSP Engines</h3>
+            <p class="service-card-desc" data-i18n="service_4_desc">
+              Custom media playback engines, hardware-accelerated video rendering, audio decoders, and digital signal processing (DSP) equalizer filtering pipelines.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">ExoPlayer</span>
+              <span class="service-tag">Audio DSP</span>
+              <span class="service-tag">Media Codecs</span>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="service-card-title" data-i18n="service_5_title">Mobile Game Engineering</h3>
+            <p class="service-card-desc" data-i18n="service_5_desc">
+              Engaging 2D/3D casual games, puzzle mechanics, real-time particle rendering, combo math systems, and cross-device hardware scaling for maximum retention.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">Match-3 Logic</span>
+              <span class="service-tag">Physics</span>
+              <span class="service-tag">Game Loop 60fps</span>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <h3 class="service-card-title" data-i18n="service_6_title">Cloud Backends & APIs</h3>
+            <p class="service-card-desc" data-i18n="service_6_desc">
+              Scalable REST and GraphQL server architectures, real-time databases, authentication flows, and automated CI/CD deployment pipelines.
+            </p>
+            <div class="service-tags">
+              <span class="service-tag">Node.js</span>
+              <span class="service-tag">Firebase</span>
+              <span class="service-tag">Cloud Functions</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Engineering Pipeline
+         ========================================================================== -->
+    <section class="pipeline-section" id="pipeline">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="pulse-dot"></span>
+            <span data-i18n="pipeline_badge">Structured Execution</span>
+          </div>
+          <h2 class="section-title" data-i18n="pipeline_title">Our Production Roadmap</h2>
+          <p class="section-desc" data-i18n="pipeline_desc">
+            A proven 4-stage engineering lifecycle transforming concepts into verified, high-rating digital products.
+          </p>
+        </div>
+
+        <div class="pipeline-grid">
+          <div class="pipeline-card">
+            <div class="pipeline-number">01</div>
+            <h3 class="pipeline-title" data-i18n="step_1_title">Architecture & UX</h3>
+            <p class="pipeline-desc" data-i18n="step_1_desc">
+              Defining core specs, user flows, database schemas, and wireframing high-converting visual interfaces.
+            </p>
+          </div>
+
+          <div class="pipeline-card">
+            <div class="pipeline-number">02</div>
+            <h3 class="pipeline-title" data-i18n="step_2_title">Agile Coding</h3>
+            <p class="pipeline-desc" data-i18n="step_2_desc">
+              Writing clean, maintainable, modular native and web code with unit tests, CI/CD, and performance benchmarks.
+            </p>
+          </div>
+
+          <div class="pipeline-card">
+            <div class="pipeline-number">03</div>
+            <h3 class="pipeline-title" data-i18n="step_3_title">QA &amp; Device Testing</h3>
+            <p class="pipeline-desc" data-i18n="step_3_desc">
+              Multi-device compatibility validation, crash profiling, memory leak detection, and 60 FPS performance tuning.
+            </p>
+          </div>
+
+          <div class="pipeline-card">
+            <div class="pipeline-number">04</div>
+            <h3 class="pipeline-title" data-i18n="step_4_title">Store Launch</h3>
+            <p class="pipeline-desc" data-i18n="step_4_desc">
+              Google Play Console production approval, global CDN rollout, real-time analytics monitoring, and versioning.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact & Project Inquiry Section
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Contact Left Details -->
+          <div class="contact-info-col">
+            <div class="section-badge">
+              <span class="pulse-dot"></span>
+              <span data-i18n="contact_badge">Let's Build Together</span>
+            </div>
+            <h3 data-i18n="contact_title">Ready to Launch Your Next Software Breakthrough?</h3>
+            <p class="contact-info-desc" data-i18n="contact_desc">
+              Whether you need a custom native Android app, a modern web platform, or guidance on navigating Google Play Console closed testing, MANOO Tech is ready to assist.
+            </p>
+
+            <div class="contact-direct-items">
+              <div class="direct-item">
+                <div class="direct-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="direct-item-meta">
+                  <span data-i18n="direct_inquiry_label">Direct Engineering Inquiries</span>
+                  <a href="mailto:manootech2030@gmail.com">manootech2030@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="direct-item">
+                <div class="direct-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="direct-item-meta">
+                  <span data-i18n="response_time_label">Response Time</span>
+                  <p data-i18n="response_time_val">Within 24 Hours / Worldwide Support</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="#apps" class="btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <span data-i18n="hero_explore_btn">Explore Flagship Apps</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-col">
+            <form class="contact-form" id="mainContactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contactName" data-i18n="contact_name_label">Your Name</label>
+                  <input type="text" id="contactName" class="form-input" placeholder="Michael" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactEmail" data-i18n="contact_email_label">Your Email</label>
+                  <input type="email" id="contactEmail" class="form-input" placeholder="michael@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactSubject" data-i18n="contact_inquiry_label">Inquiry Type</label>
+                <select id="contactSubject" class="form-select" required>
+                  <option value="Mobile App Development">Custom Android App Development</option>
+                  <option value="Web Platform Development">Web Application &amp; Corporate Site</option>
+                  <option value="Google Play Publishing">Google Play Store Publishing</option>
+                  <option value="General Partnership">General Technical Partnership</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactMessage" data-i18n="contact_msg_label">Project Details &amp; Requirements</label>
+                <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="Tell us about your project vision, target timeline, or feedback..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" id="contact-submit-btn">
+                <span data-i18n="contact_submit_btn">Send Project Inquiry</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+
+              <div id="contactFeedback" class="submit-feedback-msg"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-main-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand-summary">
+          <a href="#home" class="brand-logo" aria-label="MANOO Tech">
+            <img src="assets/images/logo-icon.png" alt="MANOO Tech Logo" class="brand-icon-img">
+            <div class="brand-text-group" dir="ltr">
+              <span class="brand-name" dir="ltr"><bdi>MANOO</bdi> <span class="gradient-cyan"><bdi>Tech</bdi></span></span>
+              <span class="brand-tagline" dir="ltr"><bdi>Software Development</bdi></span>
+            </div>
+          </a>
+          <p data-i18n="footer_summary">
+            Architecting next-generation mobile applications and high-impact web platforms. Committed to craftsmanship, performance, and Google Play compliance.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_nav_title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home" data-i18n="nav_home">Home Overview</a></li>
+            <li><a href="#apps" data-i18n="nav_apps">Flagship Applications</a></li>
+            <li><a href="#services" data-i18n="nav_services">Services &amp; Solutions</a></li>
+            <li><a href="#pipeline" data-i18n="nav_pipeline">Engineering Process</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Get In Touch</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Products -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_apps_title">Google Play Apps</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#app-muziplay">MuziPlay Media Hub</a></li>
+            <li><a href="#app-brixy">Brixy Match-3 Puzzle</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.aistudio.muziplay.xnxfyx" target="_blank" rel="noopener">MuziPlay on Google Play</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.aistudio.brixy.kwxyzq" target="_blank" rel="noopener">Brixy on Google Play</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact info -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_hq_title">Headquarters</h4>
+          <ul class="footer-nav-list">
+            <li><span style="color: var(--text-dim);" data-i18n="footer_email_label">Direct Email:</span></li>
+            <li><a href="mailto:manootech2030@gmail.com" class="gradient-cyan">manootech2030@gmail.com</a></li>
+            <li style="margin-top: 8px;"><span style="color: var(--text-dim);" data-i18n="footer_status_label">Status:</span></li>
+            <li><span style="color: #10b981; display: inline-flex; align-items: center; gap: 6px;"><span class="pulse-dot" style="background:#10b981; box-shadow:0 0 6px #10b981;"></span> <span data-i18n="footer_status_val">Taking Client Projects</span></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div data-i18n="footer_rights">
+          © 2026 MANOO Tech. All rights reserved. Technology & Software Development.
+        </div>
+        <div class="footer-legal-links">
+          <a href="javascript:void(0)" onclick="openPolicyModal()" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="javascript:void(0)" onclick="openPolicyModal()" data-i18n="footer_terms">Terms of Service</a>
+          <a href="#home" data-i18n="footer_top">Back to Top ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!-- ==========================================================================
+       Modal: Privacy Policy & Compliance
+       ========================================================================== -->
+  <div class="modal-backdrop" id="policyModal" role="dialog" aria-modal="true" aria-labelledby="policyTitle">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      
+      <div class="section-badge">
+        <span class="pulse-dot"></span>
+        <span>Google Play Compliance</span>
+      </div>
+      <h3 id="policyTitle" data-i18n="footer_privacy">Privacy Policy & User Rights</h3>
+      <p>Last updated: September 2026 — Applicable to MANOO Tech web platforms and Google Play Android applications (including MuziPlay & Brixy).</p>
+
+      <div class="modal-policy-body">
+        <h4>1. Information Collection & Storage</h4>
+        <p>
+          MANOO Tech values your digital privacy. Our mobile applications (MuziPlay and Brixy) are engineered with privacy-by-design. We do not harvest, store, or sell personal identifiers, contacts, or personal files. Media files accessed via MuziPlay remain strictly on your local device storage.
+        </p>
+
+        <h4>2. Device Permissions</h4>
+        <p>
+          Permissions requested by our applications (such as Storage Access for media playback, Network for web streaming, and Foreground Service for background audio) are utilized solely to provide core application functions as expected by the user.
+        </p>
+
+        <h4>3. Closed Beta Testing Participation</h4>
+        <p>
+          When you register for our Closed Testing program, your email address is used exclusively within Google Play Console's official internal and closed track testing management tools to distribute invitation tokens.
+        </p>
+
+        <h4>4. Contact the Data Controller</h4>
+        <p>
+          If you have questions or wish to request data deletion, contact us directly at <a href="mailto:manootech2030@gmail.com" class="gradient-cyan">manootech2030@gmail.com</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
