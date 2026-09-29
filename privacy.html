@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy &amp; Terms | MANOO Tech</title>
+  <meta name="description" content="Official Privacy Policy and Terms of Service for MANOO Tech software studio and Google Play mobile applications (including MuziPlay &amp; Brixy).">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="matrixCanvas"></canvas>
+
+  <!-- ==========================================================================
+       Header / Navbar
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html#home" class="brand-logo" id="nav-brand" aria-label="MANOO Tech Home">
+        <img src="assets/images/logo-icon.png" alt="MANOO Tech Logo" class="brand-icon-img">
+        <span class="brand-name">
+          <bdi dir="ltr">MANOO</bdi> <span class="gradient-cyan"><bdi dir="ltr">Tech</bdi></span>
+        </span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html#home" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="index.html#apps" class="nav-link" data-i18n="nav_apps">Flagship Apps</a></li>
+          <li><a href="index.html#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+          <li><a href="index.html#pipeline" class="nav-link" data-i18n="nav_pipeline">Pipeline</a></li>
+          <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities: Language Toggle & Theme Toggle -->
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button class="nav-tool-btn" id="langToggleBtn" aria-label="Toggle Language" title="Switch Language">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span id="langBtnText">العربية</span>
+        </button>
+
+        <!-- Theme Switcher -->
+        <button class="nav-tool-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode">
+          <span id="themeToggleIcon">
+            <svg class="theme-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Back to Home CTA -->
+        <a href="index.html" class="btn-primary" id="nav-cta-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          <span data-i18n="policy_back_home">Back to Studio</span>
+        </a>
+
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Privacy Policy Main Section
+         ========================================================================== -->
+    <section class="privacy-page-section">
+      <div class="container">
+
+        <!-- Hero Header -->
+        <div class="privacy-hero-wrap">
+          <div class="section-badge">
+            <span class="pulse-dot"></span>
+            <span data-i18n="policy_badge">Official Studio &amp; Apps Policy</span>
+          </div>
+          <h1 class="privacy-hero-title" data-i18n="policy_hero_title">
+            Privacy Policy &amp; <span class="gradient-text">Data Protection</span>
+          </h1>
+          <p class="privacy-hero-desc" data-i18n="policy_hero_sub">
+            At MANOO Tech, your privacy is fundamental to how we engineer our software. This policy outlines our commitment to transparency, data safety, and compliance across our studio web platforms and Google Play Android applications.
+          </p>
+          <div class="privacy-meta-bar">
+            <span>🛡️ <strong data-i18n="policy_meta_compliance">Google Play &amp; GDPR Compliant</strong></span>
+            <span>•</span>
+            <span data-i18n="policy_last_updated">Last Updated: September 2026 | Effective Immediately</span>
+          </div>
+        </div>
+
+        <!-- Privacy Grid Layout: Sticky TOC + Content Stream -->
+        <div class="privacy-layout">
+          
+          <!-- Sticky Sidebar TOC (Desktop) -->
+          <aside class="privacy-sidebar">
+            <div class="privacy-toc-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="8" y1="6" x2="21" y2="6"></line>
+                <line x1="8" y1="12" x2="21" y2="12"></line>
+                <line x1="8" y1="18" x2="21" y2="18"></line>
+                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+              </svg>
+              <span data-i18n="policy_toc_heading">Policy Sections</span>
+            </div>
+            <ul class="privacy-toc-list">
+              <li><a href="#sec-scope" class="privacy-toc-link" data-i18n="toc_1">1. Introduction &amp; Scope</a></li>
+              <li><a href="#sec-collection" class="privacy-toc-link" data-i18n="toc_2">2. Zero Data Sale</a></li>
+              <li><a href="#sec-permissions" class="privacy-toc-link" data-i18n="toc_3">3. Device Permissions</a></li>
+              <li><a href="#sec-third-party" class="privacy-toc-link" data-i18n="toc_4">4. Third-Party Services</a></li>
+              <li><a href="#sec-security" class="privacy-toc-link" data-i18n="toc_5">5. Data Security</a></li>
+              <li><a href="#sec-children" class="privacy-toc-link" data-i18n="toc_6">6. Children's Privacy</a></li>
+              <li><a href="#sec-rights" class="privacy-toc-link" data-i18n="toc_7">7. User Rights &amp; Deletion</a></li>
+              <li><a href="#sec-terms" class="privacy-toc-link" data-i18n="toc_8">8. Terms of Service</a></li>
+              <li><a href="#sec-contact" class="privacy-toc-link" data-i18n="toc_9">9. Contact Controller</a></li>
+            </ul>
+          </aside>
+
+          <!-- Main Policy Stream -->
+          <div class="privacy-content-stream">
+
+            <!-- Card 1: Scope & Products -->
+            <article class="policy-card" id="sec-scope">
+              <div class="policy-card-header">
+                <div class="policy-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="sec1_title">1. Introduction &amp; Scope</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="sec1_body">
+                <p>
+                  This Privacy Policy applies to all digital software products developed, operated, and published by <strong>MANOO Tech</strong> ("we", "our", or "the Studio"), including our official web platforms and all Android applications distributed via the Google Play Store (including MuziPlay, Brixy, and future titles).
+                </p>
+                <p>
+                  By installing, accessing, or using any of our applications or web services, you acknowledge the terms described in this policy. We recommend reading this document carefully to understand how your privacy is protected.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 2: Zero Data Sale & Minimal Data Footprint -->
+            <article class="policy-card" id="sec-collection">
+              <div class="policy-card-header">
+                <div class="policy-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="sec2_title">2. Privacy by Design &amp; Zero Personal Data Sale</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="sec2_body">
+                <p>
+                  MANOO Tech operates strictly under a <strong>Privacy-by-Design</strong> philosophy. We believe great software should serve users without intruding on their personal digital lives.
+                </p>
+                <div class="policy-highlight-box">
+                  <strong>Our Core Promise:</strong> We do <em>not</em> collect, harvest, monetize, rent, or sell your personal identifiers, names, phone numbers, contact lists, GPS locations, or personal files to data brokers or third-party advertisers.
+                </div>
+                <p>
+                  We build high-performance software, audio engines, and immersive casual games. Monetizing personal data is not, and will never be, part of our business model.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 3: Device Permissions & Local Processing -->
+            <article class="policy-card" id="sec-permissions">
+              <div class="policy-card-header">
+                <div class="policy-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="sec3_title">3. Device Permissions &amp; On-Device Processing</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="sec3_body">
+                <p>
+                  Our mobile applications request only the minimum runtime permissions required to deliver their advertised functionality:
+                </p>
+                <ul>
+                  <li><strong>Local Storage &amp; Media Access:</strong> Utilized exclusively on-device by media players (such as MuziPlay) to index and play back your local music tracks and display album artwork. Your media files are never transmitted to our servers.</li>
+                  <li><strong>Foreground Service:</strong> Used to maintain continuous audio playback and playback notification controls when you navigate away from the app.</li>
+                  <li><strong>Network Connectivity:</strong> Used strictly to fetch remote streaming media, check application updates, or download synchronized lyrics requested explicitly by you.</li>
+                  <li><strong>Haptic / Vibration Feedback:</strong> Used within our game engines (such as Brixy) to provide tactile feedback during gameplay.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card 4: Third-Party Services & Diagnostics -->
+            <article class="policy-card" id="sec-third-party">
+              <div class="policy-card-header">
+                <div class="policy-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="sec4_title">4. Third-Party Services &amp; Diagnostics</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="sec4_body">
+                <p>
+                  To ensure stability, prevent app crashes, and deliver updates, our applications may utilize standard SDKs provided by Google:
+                </p>
+                <ul>
+                  <li><strong>Google Play Services:</strong> Enables core platform features, app integrity verification, and in-app updates.</li>
+                  <li><strong>Performance Diagnostics &amp; Crash Reports:</strong> Anonymous, aggregated diagnostic telemetry (such as device model, OS version, and stack traces) helps us identify and fix bugs rapidly.</li>
+                  <li><strong>Contextual Advertising:</strong> If an ad-supported version of a game or utility is deployed, standard Google advertising partners may serve contextual ads in accordance with Google Play Developer policies. You can reset your Google Advertising ID at any time via Android Device Settings.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card 5: Security Standards -->
+            <article class="policy-card" id="sec-security">
+              <div class="policy-card-header">
+                <div class="policy-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="sec5_title">5. Data Security &amp; Storage Standards</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="sec5_body">
+                <p>
+                  We employ rigorous engineering safeguards. Any network communications initiated by our web platforms or applications use modern encryption protocols (HTTPS/TLS 1.3).
+                </p>
+                <p>
+                  We do not retain permanent user profiles on remote databases. Any technical records maintained by third-party diagnostic services are automatically rotated and purged in compliance with industry data retention standards.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 6: Children's Privacy -->
+            <article class="policy-card" id="sec-children">
+              <div class="policy-card-header">
+                <div class="policy-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="sec6_title">6. Children's Privacy (COPPA Compliance)</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="sec6_body">
+                <p>
+                  Protecting the privacy of children is of paramount concern to MANOO Tech. Our applications are engineered for general audiences and do not knowingly collect personal data from children under the age of 13 (or under 16 within the European Economic Area).
+                </p>
+                <p>
+                  If you are a parent or guardian and believe that your child has provided us with personal information without parental consent, please contact us immediately at <a href="mailto:manootech2030@gmail.com" class="gradient-cyan">manootech2030@gmail.com</a>, and we will promptly purge such data from our systems.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 7: User Rights & Data Deletion -->
+            <article class="policy-card" id="sec-rights">
+              <div class="policy-card-header">
+                <div class="policy-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="3 6 5 6 21 6"></polyline>
+                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="sec7_title">7. User Rights &amp; Data Deletion Requests</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="sec7_body">
+                <p>
+                  In accordance with the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and Google Play Developer Policies, all users possess fundamental rights regarding their digital data:
+                </p>
+                <ul>
+                  <li><strong>Right to Access:</strong> You may request a summary of any technical correspondence or diagnostic records associated with your email.</li>
+                  <li><strong>Right to Erasure (Data Deletion):</strong> You may request the irrevocable deletion of any email correspondence or support logs.</li>
+                  <li><strong>Right to Opt-Out:</strong> You can opt out of personalized advertisements by disabling interest-based ads in your Android device settings.</li>
+                </ul>
+                <div class="policy-highlight-box">
+                  <strong>Submit a Deletion Request:</strong> Send an email with subject <code>"Data Deletion Request"</code> to <a href="mailto:manootech2030@gmail.com?subject=Data%20Deletion%20Request%20-%20MANOO%20Tech" class="gradient-cyan"><strong>manootech2030@gmail.com</strong></a>. Requests are confirmed and executed within 48 business hours.
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 8: Terms of Service & IP -->
+            <article class="policy-card" id="sec-terms">
+              <div class="policy-card-header">
+                <div class="policy-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="sec8_title">8. Terms of Service &amp; Intellectual Property</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="sec8_body">
+                <p>
+                  All applications, software architectures, logos, audio algorithms, game mechanics, and graphical assets published under <strong>MANOO Tech</strong> are protected by international copyright and intellectual property laws.
+                </p>
+                <p>
+                  You are granted a non-exclusive, revocable, personal license to install and use our applications via official distribution channels (such as Google Play). You may not reverse-engineer, decompile, redistribute, or extract proprietary software modules without prior written consent from MANOO Tech.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 9: Direct Contact Controller -->
+            <article class="policy-card" id="sec-contact">
+              <div class="policy-card-header">
+                <div class="policy-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="sec9_title">9. Contact the Studio Data Controller</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="sec9_body">
+                <p>
+                  If you have questions, regulatory inquiries, or feedback regarding this Privacy Policy and our data handling practices, our engineering and compliance team is directly available:
+                </p>
+                <div class="policy-contact-banner">
+                  <h4 data-i18n="policy_banner_title">MANOO Tech Engineering &amp; Compliance</h4>
+                  <p data-i18n="policy_banner_sub">Direct point of contact for Google Play compliance, data rights, and technical inquiries.</p>
+                  <a href="mailto:manootech2030@gmail.com" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <span>manootech2030@gmail.com</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-main-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand-summary">
+          <a href="index.html#home" class="brand-logo" aria-label="MANOO Tech">
+            <img src="assets/images/logo-icon.png" alt="MANOO Tech Logo" class="brand-icon-img">
+            <span class="brand-name">
+              <bdi dir="ltr">MANOO</bdi> <span class="gradient-cyan"><bdi dir="ltr">Tech</bdi></span>
+            </span>
+          </a>
+          <p data-i18n="footer_summary">
+            Architecting next-generation mobile applications and high-impact web platforms. Committed to craftsmanship, performance, and Google Play compliance.
+          </p>
+          <div class="footer-status-pill">
+            <span class="status-indicator-dot"></span>
+            <span style="color: var(--text-dim);" data-i18n="footer_status_label">Studio Status:</span>
+            <strong data-i18n="footer_status_val">Open for Innovation</strong>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_nav_title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html#home" data-i18n="nav_home">Home Overview</a></li>
+            <li><a href="index.html#apps" data-i18n="nav_apps">Flagship Applications</a></li>
+            <li><a href="index.html#services" data-i18n="nav_services">Services &amp; Solutions</a></li>
+            <li><a href="index.html#pipeline" data-i18n="nav_pipeline">Engineering Process</a></li>
+            <li><a href="index.html#contact" data-i18n="nav_contact">Get In Touch</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Flagship Products -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_apps_title">Google Play Apps</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html#app-muziplay">MuziPlay Media Hub</a></li>
+            <li><a href="index.html#app-brixy">Brixy Match-3 Puzzle</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.aistudio.muziplay.xnxfyx" target="_blank" rel="noopener">MuziPlay on Google Play</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.aistudio.brixy.kwxyzq" target="_blank" rel="noopener">Brixy on Google Play</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact info -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_hq_title">Headquarters</h4>
+          <ul class="footer-nav-list">
+            <li><span style="color: var(--text-dim);" data-i18n="footer_email_label">Direct Email:</span></li>
+            <li><a href="mailto:manootech2030@gmail.com" class="gradient-cyan">manootech2030@gmail.com</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div data-i18n="footer_rights">
+          © 2026 MANOO Tech. All rights reserved. Technology &amp; Software Development.
+        </div>
+        <div class="footer-legal-links">
+          <a href="privacy.html" class="gradient-cyan" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="privacy.html#sec-terms" data-i18n="footer_terms">Terms of Service</a>
+          <a href="#" data-i18n="footer_top">Back to Top ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Master Script -->
+  <script src="script.js"></script>
+</body>
+</html>

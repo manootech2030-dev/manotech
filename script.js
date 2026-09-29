@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initParticleCanvas();
   initStickyHeader();
   initMobileMenu();
-  initModals();
   initClipboard();
   initForms();
   initStatsCounter();
@@ -167,7 +166,44 @@ const translations = {
     footer_rights: "© 2026 MANOO Tech. All rights reserved. Technology & Software Development.",
     footer_privacy: "Privacy Policy",
     footer_terms: "Terms of Service",
-    footer_top: "Back to Top ↑"
+    footer_top: "Back to Top ↑",
+
+    policy_back_home: "Back to Studio",
+    policy_badge: "Official Studio & Apps Policy",
+    policy_hero_title: `Privacy Policy & <span class="gradient-text">Data Protection</span>`,
+    policy_hero_sub: "At MANOO Tech, your privacy is fundamental to how we engineer our software. This policy outlines our commitment to transparency, data safety, and compliance across our studio web platforms and Google Play Android applications.",
+    policy_meta_compliance: "Google Play & GDPR Compliant",
+    policy_last_updated: "Last Updated: September 2026 | Effective Immediately",
+    policy_toc_heading: "Policy Sections",
+    toc_1: "1. Introduction & Scope",
+    toc_2: "2. Zero Data Sale",
+    toc_3: "3. Device Permissions",
+    toc_4: "4. Third-Party Services",
+    toc_5: "5. Data Security",
+    toc_6: "6. Children's Privacy",
+    toc_7: "7. User Rights & Deletion",
+    toc_8: "8. Terms of Service",
+    toc_9: "9. Contact Controller",
+    sec1_title: "1. Introduction & Scope",
+    sec1_body: `<p>This Privacy Policy applies to all digital software products developed, operated, and published by <strong>MANOO Tech</strong> ("we", "our", or "the Studio"), including our official web platforms and all Android applications distributed via the Google Play Store (including MuziPlay, Brixy, and future titles).</p><p>By installing, accessing, or using any of our applications or web services, you acknowledge the terms described in this policy. We recommend reading this document carefully to understand how your privacy is protected.</p>`,
+    sec2_title: "2. Privacy by Design & Zero Personal Data Sale",
+    sec2_body: `<p>MANOO Tech operates strictly under a <strong>Privacy-by-Design</strong> philosophy. We believe great software should serve users without intruding on their personal digital lives.</p><div class="policy-highlight-box"><strong>Our Core Promise:</strong> We do <em>not</em> collect, harvest, monetize, rent, or sell your personal identifiers, names, phone numbers, contact lists, GPS locations, or personal files to data brokers or third-party advertisers.</div><p>We build high-performance software, audio engines, and immersive casual games. Monetizing personal data is not, and will never be, part of our business model.</p>`,
+    sec3_title: "3. Device Permissions & On-Device Processing",
+    sec3_body: `<p>Our mobile applications request only the minimum runtime permissions required to deliver their advertised functionality:</p><ul><li><strong>Local Storage & Media Access:</strong> Utilized exclusively on-device by media players (such as MuziPlay) to index and play back your local music tracks and display album artwork. Your media files are never transmitted to our servers.</li><li><strong>Foreground Service:</strong> Used to maintain continuous audio playback and playback notification controls when you navigate away from the app.</li><li><strong>Network Connectivity:</strong> Used strictly to fetch remote streaming media, check application updates, or download synchronized lyrics requested explicitly by you.</li><li><strong>Haptic / Vibration Feedback:</strong> Used within our game engines (such as Brixy) to provide tactile feedback during gameplay.</li></ul>`,
+    sec4_title: "4. Third-Party Services & Diagnostics",
+    sec4_body: `<p>To ensure stability, prevent app crashes, and deliver updates, our applications may utilize standard SDKs provided by Google:</p><ul><li><strong>Google Play Services:</strong> Enables core platform features, app integrity verification, and in-app updates.</li><li><strong>Performance Diagnostics & Crash Reports:</strong> Anonymous, aggregated diagnostic telemetry (such as device model, OS version, and stack traces) helps us identify and fix bugs rapidly.</li><li><strong>Contextual Advertising:</strong> If an ad-supported version of a game or utility is deployed, standard Google advertising partners may serve contextual ads in accordance with Google Play Developer policies. You can reset your Google Advertising ID at any time via Android Device Settings.</li></ul>`,
+    sec5_title: "5. Data Security & Storage Standards",
+    sec5_body: `<p>We employ rigorous engineering safeguards. Any network communications initiated by our web platforms or applications use modern encryption protocols (HTTPS/TLS 1.3).</p><p>We do not retain permanent user profiles on remote databases. Any technical records maintained by third-party diagnostic services are automatically rotated and purged in compliance with industry data retention standards.</p>`,
+    sec6_title: "6. Children's Privacy (COPPA Compliance)",
+    sec6_body: `<p>Protecting the privacy of children is of paramount concern to MANOO Tech. Our applications are engineered for general audiences and do not knowingly collect personal data from children under the age of 13 (or under 16 within the European Economic Area).</p><p>If you are a parent or guardian and believe that your child has provided us with personal information without parental consent, please contact us immediately at <a href="mailto:manootech2030@gmail.com" class="gradient-cyan">manootech2030@gmail.com</a>, and we will promptly purge such data from our systems.</p>`,
+    sec7_title: "7. User Rights & Data Deletion Requests",
+    sec7_body: `<p>In accordance with the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and Google Play Developer Policies, all users possess fundamental rights regarding their digital data:</p><ul><li><strong>Right to Access:</strong> You may request a summary of any technical correspondence or diagnostic records associated with your email.</li><li><strong>Right to Erasure (Data Deletion):</strong> You may request the irrevocable deletion of any email correspondence or support logs.</li><li><strong>Right to Opt-Out:</strong> You can opt out of personalized advertisements by disabling interest-based ads in your Android device settings.</li></ul><div class="policy-highlight-box"><strong>Submit a Deletion Request:</strong> Send an email with subject <code>"Data Deletion Request"</code> to <a href="mailto:manootech2030@gmail.com?subject=Data%20Deletion%20Request%20-%20MANOO%20Tech" class="gradient-cyan"><strong>manootech2030@gmail.com</strong></a>. Requests are confirmed and executed within 48 business hours.</div>`,
+    sec8_title: "8. Terms of Service & Intellectual Property",
+    sec8_body: `<p>All applications, software architectures, logos, audio algorithms, game mechanics, and graphical assets published under <strong>MANOO Tech</strong> are protected by international copyright and intellectual property laws.</p><p>You are granted a non-exclusive, revocable, personal license to install and use our applications via official distribution channels (such as Google Play). You may not reverse-engineer, decompile, redistribute, or extract proprietary software modules without prior written consent from MANOO Tech.</p>`,
+    sec9_title: "9. Contact the Studio Data Controller",
+    sec9_body: `<p>If you have questions, regulatory inquiries, or feedback regarding this Privacy Policy and our data handling practices, our engineering and compliance team is directly available:</p><div class="policy-contact-banner"><h4 data-i18n="policy_banner_title">MANOO Tech Engineering & Compliance</h4><p data-i18n="policy_banner_sub">Direct point of contact for Google Play compliance, data rights, and technical inquiries.</p><a href="mailto:manootech2030@gmail.com" class="btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>manootech2030@gmail.com</span></a></div>`,
+    policy_banner_title: "MANOO Tech Engineering & Compliance",
+    policy_banner_sub: "Direct point of contact for Google Play compliance, data rights, and technical inquiries."
   },
 
   ar: {
@@ -262,7 +298,44 @@ const translations = {
     footer_rights: "© 2026 <bdi dir=\"ltr\">MANOO Tech</bdi>. جميع الحقوق محفوظة. استوديو تطوير البرمجيات والتطبيقات.",
     footer_privacy: "سياسة الخصوصية",
     footer_terms: "الشروط والأحكام",
-    footer_top: "العودة للأعلى ↑"
+    footer_top: "العودة للأعلى ↑",
+
+    policy_back_home: "العودة للاستوديو",
+    policy_badge: "وثيقة الخصوصية الرسمية للاستوديو والتطبيقات",
+    policy_hero_title: `سياسة الخصوصية و<span class="gradient-text">حماية البيانات</span>`,
+    policy_hero_sub: "في <bdi dir=\"ltr\">MANOO Tech</bdi>، تُعد خصوصيتك ركيزة أساسية في أسلوب تصميمنا وتطويرنا للبرمجيات. توضح هذه الوثيقة التزامنا الصارم بالشفافية وأمان البيانات والامتثال لمعايير متجر Google Play العالمية عبر منصاتنا وتطبيقات الأندرويد.",
+    policy_meta_compliance: "متوافق مع معايير Google Play و GDPR",
+    policy_last_updated: "آخر تحديث: سبتمبر 2026 | سارية المفعول فوراً",
+    policy_toc_heading: "أقسام السياسة",
+    toc_1: "1. المقدمة ونطاق التطبيق",
+    toc_2: "2. عدم بيع البيانات نهائياً",
+    toc_3: "3. أذونات الجهاز والمعالجة",
+    toc_4: "4. خدمات الطرف الثالث",
+    toc_5: "5. معايير أمان البيانات",
+    toc_6: "6. حماية خصوصية الأطفال",
+    toc_7: "7. حقوق المستخدمين ومسح البيانات",
+    toc_8: "8. الشروط وحقوق الملكية",
+    toc_9: "9. التواصل مع مسؤول الخصوصية",
+    sec1_title: "1. المقدمة ونطاق التطبيق",
+    sec1_body: `<p>تنطبق سياسة الخصوصية هذه على جميع المنتجات والبرمجيات الرقمية المطورة والمُدارة والمنشورة بواسطة <strong><bdi dir="ltr">MANOO Tech</bdi></strong> («الاستوديو» أو «نحن»)، بما يشمل موقعنا الإلكتروني الرسمي وجميع تطبيقات الموبايل المنشورة على متجر Google Play (مثل MuziPlay و Brixy وأي إصدارات قادمة).</p><p>يعتبر تنزيلك أو تثبيتك أو استخدامك لأي من تطبيقاتنا أو خدمات الويب الخاصة بنا إقراراً وموافقةً على الشروط والممارسات الموضحة في هذه الوثيقة. نوصي بقراءة هذه السياسة بعناية لفهم كيفية صون خصوصيتك الرقمية.</p>`,
+    sec2_title: "2. الخصوصية بالتصميم وعدم بيع البيانات نهائياً",
+    sec2_body: `<p>يعمل استوديو MANOO Tech وفق فلسفة هندسية صارمة تُعرف بـ <strong>الخصوصية بالتصميم (Privacy-by-Design)</strong>؛ نؤمن بأن البرمجيات الممتازة يجب أن تخدم المستخدم دون أدنى تطفل على حياته الرقمية.</p><div class="policy-highlight-box"><strong>تعهدنا الراسخ:</strong> نحن <em>لا نجمع، ولا نخزن، ولا نتاجر، ولا نؤجر، ولا نبيع</em> بياناتك ومعرفاتك الشخصية، أو اسمك، أو أرقام هواتفك، أو جهات اتصالك، أو موقعك الجغرافي، أو ملفاتك الخاصة لأي وسطاء بيانات أو شركات إعلانية.</div><p>نحن نبني برمجيات فائقة الأداء، ومحركات صوتية، وألعاب تفاعلية ممتعة. إن التربح من البيانات الشخصية للمستخدمين ليس جزءاً من نموذج عملنا ولن يكون كذلك أبداً.</p>`,
+    sec3_title: "3. أذونات الجهاز والمعالجة المحلية",
+    sec3_body: `<p>تطلب تطبيقاتنا فقط الحد الأدنى الصارم من أذونات التشغيل اللازمة لتقديم وظائفها الأساسية:</p><ul><li><strong>أذونات الوسائط والتخزين المحلي:</strong> تُستخدم محلياً وحصرياً داخل جهازك بواسطة مشغل الوسائط (مثل MuziPlay) لفهرسة وتشغيل ملفاتك الصوتية المخزنة وعرض أغلفة الألبومات. لا يتم نقل أي من ملفاتك الصوتية إلى خوادمنا إطلاقاً.</li><li><strong>خدمة العمل في الخلفية (Foreground Service):</strong> تُستخدم للحفاظ على استمرار تشغيل الصوت وعرض عناصر التحكم في الإشعارات وشاشة القفل أثناء استخدام تطبيقات أخرى.</li><li><strong>الاتصال بالإنترنت:</strong> يُستخدم حصرياً لتشغيل البث عبر الويب، أو فحص التحديثات، أو تنزيل الكلمات المتزامنة التي يطلبها المستخدم بنفسه.</li><li><strong>الاهتزاز والتفاعل اللمسي (Haptic Feedback):</strong> يُستخدم في ألعابنا (مثل Brixy) لإعطاء تجربة لمسية ممتعة أثناء مطابقة المكعبات.</li></ul>`,
+    sec4_title: "4. خدمات الطرف الثالث والبيانات التقنية",
+    sec4_body: `<p>لضمان استقرار التطبيقات ومنع حدوث أعطال مفاجئة ومتابعة الأداء، قد تتكامل تطبيقاتنا مع أدوات برمجية قياسية مقدمة من شركة Google:</p><ul><li><strong>خدمات Google Play (Google Play Services):</strong> لتمكين الميزات الأساسية للنظام، والتحقق من سلامة التطبيق، وإجراء التحديثات الداخلية السلسة.</li><li><strong>تشخيص الأعطال وتقارير الأداء:</strong> بيانات تقنية مجهولة ومجمعة (مثل طراز الهاتف، وإصدار الأندرويد، وسجل تتبع الأخطاء البرمجية) تساعدنا في اكتشاف الأعطال وحلها فوراً.</li><li><strong>الإعلانات العامة غير المخصصة:</strong> في حال توفر إصدار مجاني مدعوم بإعلانات، قد تعرض شبكات Google الإعلانية إعلانات سياقية متوافقة مع سياسات مطوري Google Play. يمكنك في أي وقت إعادة ضبط معرّف الإعلانات الخاص بك من إعدادات جهازك بنظام Android.</li></ul>`,
+    sec5_title: "5. معايير أمان وتخزين البيانات",
+    sec5_body: `<p>نلتزم بأعلى معايير الحماية التقنية؛ تتم جميع الاتصالات الشبكية في مواقعنا وتطبيقاتنا عبر بروتوكولات التشفير الحديثة (HTTPS / TLS 1.3).</p><p>نحن لا نحتفظ بأي ملفات تعريف دائمة للمستخدمين على خوادم بعيدة، وتخضع السجلات التقنية المجهولة لدى خدمات التحليلات المعتمدة لسياسات تدوير ومسح دورية تلقائية بما يتوافق مع المعايير العالمية.</p>`,
+    sec6_title: "6. حماية خصوصية الأطفال (COPPA)",
+    sec6_body: `<p>حماية خصوصية الأطفال تحظى بأولوية قصوى لدينا. جميع تطبيقاتنا مصممة للجمهور العام، ونحن لا نقوم عن قصد أو علم بجمع أي بيانات شخصية من الأطفال دون سن 13 عاماً (أو دون سن 16 عاماً في المنطقة الاقتصادية الأوروبية).</p><p>إذا كنت ولي أمر أو وصياً واكتشفت أن طفلك قد زودنا بمعلومات شخصية دون موافقتك، يرجى مراسلتنا فوراً عبر <a href="mailto:manootech2030@gmail.com" class="gradient-cyan">manootech2030@gmail.com</a>، وسنتخذ فوراً الإجراءات الفورية لمسح تلك البيانات نهائياً.</p>`,
+    sec7_title: "7. حقوق المستخدمين ومسح البيانات (GDPR / Google Play)",
+    sec7_body: `<p>بموجب اللائحة العامة لحماية البيانات (GDPR) وقوانين الخصوصية العالمية وسياسات Google Play، يتمتع جميع المستخدمين بحقوق كاملة تجاه بياناتهم الرقمية:</p><ul><li><strong>حق الاطلاع والاستعلام:</strong> يمكنك طلب نسخة من أي سجلات تواصل أو بيانات تقنية مجهولة مرتبطة بمراسلاتك.</li><li><strong>حق المسح والحذف النهائي (Right to Erasure):</strong> يمكنك طلب حذف أي مراسلات دعم فني أو بيانات مرتبطة بك بشكل نهائي لا رجعة فيه.</li><li><strong>حق إلغاء التخصيص:</strong> يمكنك إلغاء الإعلانات المخصصة من خلال تعطيلها مباشرة من إعدادات جهازك الأندرويد.</li></ul><div class="policy-highlight-box"><strong>طريقة تقديم طلب مسح البيانات:</strong> أرسل بريداً إلكترونياً بعنوان <code>"Data Deletion Request"</code> إلى <a href="mailto:manootech2030@gmail.com?subject=Data%20Deletion%20Request%20-%20MANOO%20Tech" class="gradient-cyan"><strong>manootech2030@gmail.com</strong></a>، وسيتم تأكيد وتنفيذ طلبك خلال 48 ساعة عمل كحد أقصى.</div>`,
+    sec8_title: "8. الشروط والأحكام وحقوق الملكية الفكرية",
+    sec8_body: `<p>جميع التطبيقات، والمعماريات البرمجية، والشعارات، وخوارزميات الصوت، وميكانيكا الألعاب، والأصول الرسومية المنشورة تحت اسم <strong><bdi dir="ltr">MANOO Tech</bdi></strong> محمية بموجب قوانين حقوق النشر والملكية الفكرية الدولية.</p><p>يُمنح المستخدم ترخيصاً شخصياً غير حصري وقابلاً للإلغاء لتنزيل واستخدام التطبيقات من القنوات الرسمية (مثل Google Play). يُحظر تماماً تفكيك التطبيقات هندسياً، أو إعادة تجميعها، أو استخراج أجزاء برمجية منها لأغراض تجارية دون إذن كتابي مسبق من إدارة الاستوديو.</p>`,
+    sec9_title: "9. التواصل المباشر مع مسؤول الخصوصية بالاستوديو",
+    sec9_body: `<p>إذا كان لديك أي استفسار قانوني، أو تنظيمي، أو فني يتعلق بهذه السياسة وممارسات أمان البيانات لدينا، فإن فريق الامتثال والهندسة متاح للتواصل مباشرة:</p><div class="policy-contact-banner"><h4 data-i18n="policy_banner_title">فريق الهندسة والامتثال بـ MANOO Tech</h4><p data-i18n="policy_banner_sub">نقطة التواصل المباشرة للامتثال لمتجر Google Play وحقوق البيانات والاستفسارات القانونية.</p><a href="mailto:manootech2030@gmail.com" class="btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>manootech2030@gmail.com</span></a></div>`,
+    policy_banner_title: "فريق الهندسة والامتثال بـ MANOO Tech",
+    policy_banner_sub: "نقطة التواصل المباشرة للامتثال لمتجر Google Play وحقوق البيانات والاستفسارات القانونية."
   }
 };
 
@@ -409,6 +482,7 @@ function initParticleCanvas() {
    -------------------------------------------------------------------------- */
 function initStickyHeader() {
   const header = document.querySelector('.site-header');
+  if (!header) return;
   const navLinks = document.querySelectorAll('.nav-link');
   const sections = document.querySelectorAll('section[id]');
 
@@ -482,38 +556,6 @@ window.switchScreenshot = function (imgId, srcPath, btn) {
   }, 160);
 };
 
-/* --------------------------------------------------------------------------
-   Interactive Modals (Privacy Policy)
-   -------------------------------------------------------------------------- */
-function initModals() {
-  const policyModal = document.getElementById('policyModal');
-  const modalCloses = document.querySelectorAll('.modal-close-btn, .modal-backdrop');
-
-  // Open Privacy Policy Modal
-  window.openPolicyModal = function () {
-    if (!policyModal) return;
-    policyModal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  };
-
-  // Close modals
-  modalCloses.forEach((elem) => {
-    elem.addEventListener('click', (e) => {
-      if (e.target === elem || elem.classList.contains('modal-close-btn')) {
-        document.querySelectorAll('.modal-backdrop').forEach((m) => m.classList.remove('active'));
-        document.body.style.overflow = '';
-      }
-    });
-  });
-
-  // ESC key listener
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      document.querySelectorAll('.modal-backdrop').forEach((m) => m.classList.remove('active'));
-      document.body.style.overflow = '';
-    }
-  });
-}
 
 /* --------------------------------------------------------------------------
    Clipboard Copy Helper
