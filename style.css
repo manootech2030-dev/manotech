@@ -1609,7 +1609,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-links {
     position: fixed;
     top: 68px;
@@ -2172,15 +2172,120 @@ img {
   font-size: 1rem;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .privacy-layout {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
   .privacy-sidebar {
     display: none;
   }
   .policy-card {
-    padding: 24px;
+    padding: 26px 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .privacy-page-section {
+    padding: 85px 0 40px;
+  }
+
+  .privacy-hero-wrap {
+    margin-bottom: 26px;
+  }
+
+  .privacy-hero-title {
+    font-size: clamp(1.6rem, 6.5vw, 2.2rem);
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+
+  .privacy-hero-desc {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 16px;
+  }
+
+  .privacy-meta-bar {
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 0.78rem;
+    gap: 6px;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .privacy-meta-bar span:nth-child(2) {
+    display: none;
+  }
+
+  .privacy-content-stream {
+    gap: 16px;
+  }
+
+  .policy-card {
+    padding: 20px 16px;
+    border-radius: 16px;
+    scroll-margin-top: 75px;
+    min-width: 0;
+    width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .policy-card-header {
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .policy-card-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+
+  .policy-card-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .policy-card-title {
+    font-size: 1.15rem;
+    line-height: 1.35;
+  }
+
+  .policy-card-body {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .policy-highlight-box {
+    padding: 14px 14px;
+    margin: 14px 0;
+    font-size: 0.86rem;
+    border-radius: 10px;
+  }
+
+  .policy-contact-banner {
+    padding: 22px 14px;
+    border-radius: 16px;
+  }
+
+  .policy-contact-banner h4 {
+    font-size: 1.15rem;
+  }
+
+  .policy-contact-banner p {
+    font-size: 0.88rem;
+  }
+
+  .policy-contact-banner .btn-primary {
+    width: 100%;
+    padding: 11px 14px;
+    font-size: 0.85rem;
+    justify-content: center;
+    word-break: break-all;
   }
 }
 
