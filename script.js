@@ -254,7 +254,58 @@ const translations = {
     muzi_sec10_title: "10. Contact Developer & Data Controller",
     muzi_sec10_body: `<p>If you have any questions, regulatory inquiries, or concerns regarding this Privacy Policy or MuziPlay's data protection practices, please contact our engineering and compliance team:</p><div class="policy-contact-banner"><h4 data-i18n="muzi_contact_banner_title">MANOO Tech — MuziPlay Compliance Team</h4><p data-i18n="muzi_contact_banner_sub">Direct point of contact for Google Play compliance, data rights, and technical queries.</p><a href="mailto:manootech2030@gmail.com?subject=MuziPlay%20Privacy%20Inquiry" class="btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>manootech2030@gmail.com</span></a></div>`,
     muzi_contact_banner_title: "MANOO Tech — MuziPlay Compliance Team",
-    muzi_contact_banner_sub: "Direct point of contact for Google Play compliance, data rights, and technical queries."
+    muzi_contact_banner_sub: "Direct point of contact for Google Play compliance, data rights, and technical queries.",
+
+    // Brixy Specific Privacy Policy (English)
+    brixy_priv_badge: "Official Game Privacy Policy",
+    brixy_priv_hero_title: `Brixy Match-3 <span class="brixy-gradient-text">Privacy Policy</span>`,
+    brixy_priv_hero_sub: "Comprehensive Privacy & Child Protection Policy for the Brixy Match-3 Android mobile game. This policy details our strict on-device data handling, offline storage, COPPA compliance, and alignment with Google Play Families & Developer Policies.",
+    brixy_priv_pub: `Developer & Publisher: <strong>MANOO Tech</strong> • Contact: <strong>manootech2030@gmail.com</strong>`,
+    brixy_priv_view_play: "View on Google Play Store",
+    brixy_meta_families: "Google Play Families & COPPA Safe",
+    brixy_priv_last_updated: "Effective Date: October 2026 | Last Updated: October 31, 2026",
+    brixy_toc_1: "1. Scope & Game Identity",
+    brixy_toc_2: "2. Zero Personal Data Sale",
+    brixy_toc_3: "3. Android Permissions",
+    brixy_toc_4: "4. Local Gameplay Storage",
+    brixy_toc_5: "5. Advertising & SDKs",
+    brixy_toc_6: "6. Children & Families (COPPA)",
+    brixy_toc_7: "7. User Rights & Deletion",
+    brixy_toc_8: "8. Security & Encryption",
+    brixy_toc_9: "9. Intellectual Property",
+    brixy_toc_10: "10. Contact Developer",
+
+    brixy_sec1_title: "1. Scope & Game Identity",
+    brixy_sec1_body: `<p>This Privacy Policy applies solely to the Android casual mobile game <strong>Brixy</strong> (Application ID: <code>com.aistudio.brixy.kwxyzq</code>), developed, operated, and published by <strong>MANOO Tech</strong> ("we", "our", or "the Studio").</p><p>Brixy is an arcade-style casual match-3 puzzle game featuring colorful sweets, jelly drops, cascade combos, dynamic power-up boosters (such as rockets, bombs, and hammers), and hundreds of handcrafted puzzle levels running at a silky 60 FPS.</p><p>By installing, updating, or playing Brixy, you acknowledge the terms described in this policy. If you do not agree with any terms, please discontinue use of the game.</p>`,
+
+    brixy_sec2_title: "2. Privacy by Design & Zero Personal Data Sale",
+    brixy_sec2_body: `<p>Brixy is engineered strictly under a <strong>Privacy-by-Design</strong> philosophy. You do not need to create an account, register, log in with social media, or disclose any personal identity (such as your full name, email, phone number, address, or payment details) to play the game.</p><div class="policy-highlight-box" style="border-left-color: #ec4899;"><strong>Zero Personal Data Sale:</strong> We do <em>not</em> collect, log, sell, rent, monetize, or broker your personal information, address books, location coordinates, photos, or personal files to data brokers, advertising aggregators, or third parties.</div>`,
+
+    brixy_sec3_title: "3. Android Permissions & Hardware Usage",
+    brixy_sec3_body: `<p>Brixy requests only the absolute minimum runtime permissions required to deliver an immersive casual gaming experience:</p><ul><li><strong>VIBRATE (Haptic Feedback):</strong> Used purely on-device to trigger short, tactile vibrations when you match candies, detonate explosive boosters (rockets/bombs), or clear levels. You can disable haptic feedback at any time within the game settings menu.</li><li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Used strictly to verify app licensing and integrity via Google Play Services, download periodic game updates, and load contextual, family-safe advertisements (if applicable).</li><li><strong>WAKE_LOCK:</strong> Used to prevent your phone screen from dimming or falling asleep while actively playing an ongoing puzzle stage.</li><li><strong>No Sensitive Permissions:</strong> Brixy does <em>not</em> request access to your device contacts, precise GPS location, microphone, camera, or external storage files.</li></ul>`,
+
+    brixy_sec4_title: "4. On-Device Storage & Gameplay Progression",
+    brixy_sec4_body: `<p>All data associated with your gameplay is stored locally inside the application's isolated sandboxed storage on your device:</p><ul><li><strong>Stage Progression:</strong> Levels completed, high scores, and stars earned (1–3 stars).</li><li><strong>Inventory & Boosters:</strong> Collected hammers, rockets, explosive bombs, and board-clearing power-ups.</li><li><strong>Preferences:</strong> Sound effects volume, background music toggle, and haptic feedback settings.</li><li><strong>Offline Playability:</strong> Because progression is saved locally, Brixy is fully playable offline without requiring an active internet connection.</li></ul>`,
+
+    brixy_sec5_title: "5. Advertising, Analytics & Third-Party Services",
+    brixy_sec5_body: `<p>To support free access and maintain performance stability, Brixy may integrate certified Google developer SDKs:</p><ul><li><strong>Google Play Services:</strong> Used for in-app updates, platform security verification, and app integrity. Subject to the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="gradient-cyan">Google Privacy Policy</a>.</li><li><strong>Family-Safe Advertising:</strong> Any in-game ads served (such as rewarded video ads to earn bonus boosters) strictly adhere to Google Play Families Policy guidelines. Ads are contextual and vetted to ensure no inappropriate or mature content is ever shown.</li><li><strong>No Behavioral Tracking for Minors:</strong> We prohibit behavioral advertising or cross-app interest tracking for children. You can reset or delete your Google Advertising ID anytime via <em>Android Settings &gt; Google &gt; Ads</em>.</li><li><strong>Anonymous Diagnostics:</strong> Aggregated, anonymous crash telemetry (such as device model, OS build, and stack trace logs) helps us fix bugs and prevent frame drops without identifying individual players.</li></ul>`,
+
+    brixy_sec6_title: "6. Children's Privacy (COPPA & Google Play Families Policy)",
+    brixy_sec6_body: `<p>Brixy is designed as a family-friendly game appealing to players of all ages. We take children's privacy with the utmost seriousness:</p><ul><li><strong>COPPA & GDPR-K Compliance:</strong> We strictly comply with the Children's Online Privacy Protection Act (COPPA) and General Data Protection Regulation for Kids (GDPR-K).</li><li><strong>No Personal Data Collection:</strong> We do not knowingly collect, request, or store personal information from children under 13 (or under 16 in the European Economic Area).</li><li><strong>Safe Ad Environment:</strong> In compliance with Google Play Families Policy, all ad SDKs utilized in Brixy are certified and configured with <code>tagForChildDirectedTreatment</code> to prevent personalized tracking.</li><li><strong>Parental Rights:</strong> If a parent or guardian believes their child has submitted personal details to us without consent, please contact us immediately at <a href="mailto:manootech2030@gmail.com" style="color: #f472b6;">manootech2030@gmail.com</a>, and we will promptly purge such data.</li></ul>`,
+
+    brixy_sec7_title: "7. User Rights & Data Deletion Mechanism",
+    brixy_sec7_body: `<p>In accordance with Google Play Developer Policy and GDPR / CCPA privacy frameworks:</p><ul><li><strong>Resetting Game Data Locally:</strong> You can wipe all stored level progress, star ratings, and preferences at any time by going to <em>Android Settings &gt; Apps &gt; Brixy &gt; Storage &gt; Clear Data</em>, or by uninstalling the application.</li><li><strong>Support Records Deletion:</strong> If you have sent support emails or queries to our developer address and wish to have all correspondence permanently removed from our mail servers:</li></ul><div class="policy-highlight-box" style="border-left-color: #ec4899;"><strong>Submit a Deletion Request:</strong> Send an email with subject <code>"Data Deletion Request - Brixy"</code> to <a href="mailto:manootech2030@gmail.com?subject=Data%20Deletion%20Request%20-%20Brixy" style="color: #f472b6;"><strong>manootech2030@gmail.com</strong></a>. All associated email correspondence will be permanently purged within 48 business hours.</div>`,
+
+    brixy_sec8_title: "8. Data Security & Technical Safeguards",
+    brixy_sec8_body: `<p>We prioritize your digital safety with industry-standard technical measures:</p><ul><li><strong>Encrypted Connections:</strong> Any technical communications initiated by Brixy (such as update checks) utilize modern encryption protocols (HTTPS / TLS 1.3).</li><li><strong>Application Sandboxing:</strong> Android's application isolation architecture prevents unauthorized third-party apps from reading or modifying Brixy's local save files.</li></ul>`,
+
+    brixy_sec9_title: "9. Intellectual Property & Fair Play",
+    brixy_sec9_body: `<p>All graphical assets, candy illustrations, fruit icons, animations, booster mechanics, sound effects, logos, and code related to <strong>Brixy</strong> are the proprietary intellectual property of <strong>MANOO Tech</strong>.</p><p>You are granted a personal, non-commercial, revocable license to install and play the game via official distribution channels (such as the Google Play Store). Decompilation, extraction of artistic assets, or unauthorized redistribution is strictly prohibited.</p>`,
+
+    brixy_sec10_title: "10. Contact Developer & Data Controller",
+    brixy_sec10_body: `<p>If you have questions, feedback, or regulatory inquiries regarding this Privacy Policy or Brixy's child-safe practices, our engineering team is directly reachable:</p><div class="policy-contact-banner" style="border-color: rgba(236, 72, 153, 0.3);"><h4 data-i18n="brixy_contact_banner_title">MANOO Tech — Brixy Compliance & Support</h4><p data-i18n="brixy_contact_banner_sub">Direct point of contact for Google Play compliance, parental questions, and data deletion requests.</p><a href="mailto:manootech2030@gmail.com?subject=Brixy%20Privacy%20Inquiry" class="btn-primary" style="background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>manootech2030@gmail.com</span></a></div>`,
+    brixy_contact_banner_title: "MANOO Tech — Brixy Compliance & Support",
+    brixy_contact_banner_sub: "Direct point of contact for Google Play compliance, parental questions, and data deletion requests."
   },
 
   ar: {
@@ -437,7 +488,58 @@ const translations = {
     muzi_sec10_title: "10. التواصل المباشر مع مطور التطبيق",
     muzi_sec10_body: `<p>إذا كان لديك أي استفسار قانوني أو تنظيمي أو تقني يخص سياسة الخصوصية هذه أو ممارسات حماية البيانات في MuziPlay، فإن فريقنا متاح للتواصل مباشرة:</p><div class="policy-contact-banner"><h4 data-i18n="muzi_contact_banner_title">فريق الامتثال والهندسة بتطبيق MuziPlay - MANOO Tech</h4><p data-i18n="muzi_contact_banner_sub">نقطة التواصل المباشرة للامتثال لمتجر Google Play، وحقوق حذف البيانات، والاستفسارات التقنية.</p><a href="mailto:manootech2030@gmail.com?subject=MuziPlay%20Privacy%20Inquiry" class="btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>manootech2030@gmail.com</span></a></div>`,
     muzi_contact_banner_title: "فريق الامتثال والهندسة بتطبيق MuziPlay - MANOO Tech",
-    muzi_contact_banner_sub: "نقطة التواصل المباشرة للامتثال لمتجر Google Play، وحقوق حذف البيانات، والاستفسارات التقنية."
+    muzi_contact_banner_sub: "نقطة التواصل المباشرة للامتثال لمتجر Google Play، وحقوق حذف البيانات، والاستفسارات التقنية.",
+
+    // Brixy Specific Privacy Policy (Arabic)
+    brixy_priv_badge: "وثيقة سياسة الخصوصية الرسمية للعبة",
+    brixy_priv_hero_title: `سياسة خصوصية لعبة <span class="brixy-gradient-text">Brixy Match-3</span>`,
+    brixy_priv_hero_sub: "سياسة الخصوصية وحماية بيانات الأطفال الرسمية والشاملة للعبة الأندرويد Brixy Match-3. توضح هذه الوثيقة التزامنا الصارم بالتخزين المحلي للتقدم، والامتثال لقانون حماية خصوصية الأطفال (COPPA)، وسياسات عائلة متجر Google Play.",
+    brixy_priv_pub: `المطور والناشر: <strong><bdi dir="ltr">MANOO Tech</bdi></strong> • للتواصل: <strong>manootech2030@gmail.com</strong>`,
+    brixy_priv_view_play: "مشاهدة اللعبة على متجر Google Play",
+    brixy_meta_families: "متوافق مع سياسة العائلة بـ Google Play و COPPA",
+    brixy_priv_last_updated: "تاريخ السريان: أكتوبر 2026 | آخر تحديث: 31 أكتوبر 2026",
+    brixy_toc_1: "1. النطاق وهوية اللعبة",
+    brixy_toc_2: "2. عدم بيع البيانات نهائياً",
+    brixy_toc_3: "3. أذونات نظام أندرويد",
+    brixy_toc_4: "4. التخزين المحلي ومراحل اللعبة",
+    brixy_toc_5: "5. الإعلانات والخدمات التقنية",
+    brixy_toc_6: "6. خصوصية الأطفال والعائلة (COPPA)",
+    brixy_toc_7: "7. حقوق المستخدمين وحذف البيانات",
+    brixy_toc_8: "8. أمان البيانات والحماية التقنية",
+    brixy_toc_9: "9. حقوق الملكية الفكرية",
+    brixy_toc_10: "10. التواصل مع المطور",
+
+    brixy_sec1_title: "1. النطاق وهوية اللعبة",
+    brixy_sec1_body: `<p>تنطبق سياسة الخصوصية هذه حصرياً وبشكل خاص على لعبة الموبايل لنظام أندرويد <strong>Brixy</strong> (معرّف الحزمة البرمجية: <code>com.aistudio.brixy.kwxyzq</code>)، والمطورة والمنشورة والمُدارة بالكامل بواسطة استوديو <strong><bdi dir="ltr">MANOO Tech</bdi></strong> («الاستوديو» أو «نحن»).</p><p>لعبة Brixy هي لعبة ألغاز أركيد مسلية من نمط Match-3 تحتوي على قطع حلوى وفواكه ملونة، وسلاسل تفجيرات شيقة، ومعززات خارقة (مثل الصواريخ، والقنابل، والشاكوش)، ومئات المراحل المصممة يدوياً بمعدل 60 إطار في الثانية.</p><p>يعد تثبيتك أو استخدامك للعبة Brixy إقراراً وموافقة صريحة على الشروط والممارسات الموضحة في هذه الوثيقة.</p>`,
+
+    brixy_sec2_title: "2. الخصوصية بالتصميم وعدم بيع البيانات الشخصية نهائياً",
+    brixy_sec2_body: `<p>صُممت لعبة Brixy وفق مبدأ <strong>الخصوصية بالتصميم (Privacy-by-Design)</strong>؛ حيث لا تتطلب اللعبة منك إنشاء أي حساب، أو تسجيل الدخول عبر وسائل التواصل الاجتماعي، أو تقديم أي معلومات شخصية (مثل الاسم، أو البريد الإلكتروني، أو رقم الهاتف، أو العنوان، أو بيانات الدفع) للعب والاستمتاع بكافة المراحل.</p><div class="policy-highlight-box" style="border-left-color: #ec4899;"><strong>عدم بيع البيانات نهائياً:</strong> نحن <em>لا نجمع، ولا نخزن، ولا نبيع، ولا نؤجر، ولا نتربح</em> من أي بيانات شخصية، أو جهات اتصالك، أو موقعك الجغرافي، أو صورك وملفاتك الخاصة لأي وسطاء بيانات أو شركات إعلانية.</div>`,
+
+    brixy_sec3_title: "3. أذونات نظام أندرويد واستخدام العتاد",
+    brixy_sec3_body: `<p>تطلب لعبة Brixy الحد الأدنى الصارم فقط من أذونات التشغيل الضرورية لتقديم تجربة لعب سلسة وممتعة:</p><ul><li><strong>الاهتزاز والتفاعل اللمسي (VIBRATE):</strong> يُستخدم محلياً وحصرياً لإعطاء اهتزازات لمسية خفيفة أثناء مطابقة قطع الحلوى، وتفجير القنابل والصواريخ، وإنهاء المراحل بنجاح. يمكنك إيقاف الاهتزاز في أي وقت من قائمة إعدادات اللعبة.</li><li><strong>الاتصال بالإنترنت (INTERNET & ACCESS_NETWORK_STATE):</strong> يُستخدم حصرياً للتحقق من سلامة التطبيق وتحديثاته عبر خدمات Google Play، وعرض إعلانات سياقية آمنة للعائلة (إن وجدت).</li><li><strong>منع السكون (WAKE_LOCK):</strong> يُستخدم للحفاظ على إضاءة الشاشة ومنعها من الانطفاء التلقائي أثناء حل المرحلة الجارية.</li><li><strong>انعدام الأذونات الحساسة:</strong> لا تطلب اللعبة إطلاقاً الوصول لجهات الاتصال، أو الكاميرا، أو الميكروفون، أو الموقع الجغرافي، أو ملفات التخزين الخارجية.</li></ul>`,
+
+    brixy_sec4_title: "4. التخزين المحلي وحفظ تقدم المراحل",
+    brixy_sec4_body: `<p>تُحفظ جميع البيانات المرتبطة بتقدمك داخل اللعبة محلياً وبشكل معزول داخل جهازك الأندرويد:</p><ul><li><strong>تقدم المراحل:</strong> المستويات المكتملة، وأعلى النقاط المسجلة، والنجوم المحرزة (1 إلى 3 نجوم).</li><li><strong>المعززات والأدوات:</strong> عدد الصواريخ والقنابل والشواكيش المجمعة.</li><li><strong>التفضيلات والإعدادات:</strong> مستوى صوت المؤثرات، والموسيقى التصويرية، وحالة الاهتزاز اللمسي.</li><li><strong>إمكانية اللعب بدون إنترنت (Offline):</strong> نظراً لحفظ التقدم محلياً، تعمل اللعبة بالكامل دون الحاجة لأي اتصال بالإنترنت.</li></ul>`,
+
+    brixy_sec5_title: "5. الإعلانات والتحليلات وخدمات الطرف الثالث",
+    brixy_sec5_body: `<p>لدعم توفير اللعبة مجاناً ولضمان ثبات الأداء ومنع الأعطال، قد تتكامل اللعبة مع أدوات شركة Google المعتمدة:</p><ul><li><strong>خدمات Google Play (Google Play Services):</strong> لتمكين التحديثات الداخلية السلسة والتحقق من سلامة بيئة التشغيل. تخضع لسياسة خصوصية Google.</li><li><strong>إعلانات آمنة للعائلة:</strong> تتوافق أي إعلانات داخل اللعبة (مثل إعلانات الفيديو لمكافأة اللاعب بمعززات إضافية) تماماً مع سياسات عائلة Google Play. يتم فحص الإعلانات لضمان عدم احتوائها على أي محتوى غير مناسب.</li><li><strong>منع التتبع السلوكي للقُصّر:</strong> يُحظر تماماً التتبع السلوكي أو الاستهداف الإعلاني للأطفال. يمكنك إعادة ضبط معرّف الإعلانات أو حذفه في أي وقت من إعدادات جهازك عبر <em>إعدادات Android &gt; Google &gt; الإعلانات</em>.</li><li><strong>تشخيص الأعطال المجهول:</strong> في حال حدوث عطل غير متوقع، قد تُجمع بيانات تقنية مجهولة المصدر تماماً (مثل طراز الهاتف وإصدار الأندرويد) للمساعدة في حل العطل وتحسين استقرار الإطارات.</li></ul>`,
+
+    brixy_sec6_title: "6. حماية خصوصية الأطفال (COPPA وسياسة عائلة Google Play)",
+    brixy_sec6_body: `<p>صُممت لعبة Brixy لتكون لعبة عائلية آمنة ومناسبة لجميع الفئات العمرية، ونولي خصوصية الأطفال اهتماماً فائقاً:</p><ul><li><strong>الامتثال لقانون COPPA و GDPR-K:</strong> نلتزم التزاماً صارماً بقانون حماية خصوصية الأطفال على الإنترنت واللوائح الأوروبية لحماية القُصّر.</li><li><strong>عدم جمع بيانات الأطفال:</strong> نحن لا نقوم عن قصد أو علم بطلب أو جمع أي بيانات تعريف شخصية من الأطفال دون سن 13 عاماً (أو دون سن 16 عاماً في المنطقة الاقتصادية الأوروبية).</li><li><strong>بيئة إعلانية آمنة:</strong> وفقاً لسياسة عائلة Google Play، يتم تفعيل وسوم حماية الأطفال <code>tagForChildDirectedTreatment</code> لمنع أي إعلانات موجهة أو تتبع سلوكي.</li><li><strong>حقوق أولياء الأمور:</strong> إذا لاحظ أحد الوالدين تزويدنا بأي بيانات دون موافقته، يُرجى مراسلتنا فوراً عبر <a href="mailto:manootech2030@gmail.com" style="color: #f472b6;">manootech2030@gmail.com</a> لمسحها في الحال.</li></ul>`,
+
+    brixy_sec7_title: "7. حقوق المستخدمين وآلية الحذف النهائي للبيانات",
+    brixy_sec7_body: `<p>بموجب أطر الخصوصية العالمية وسياسات متجر Google Play:</p><ul><li><strong>مسح التقدم محلياً:</strong> يمكنك مسح كافة المراحل والبيانات المخزنة في أي وقت عبر <em>إعدادات الأندرويد &gt; التطبيقات &gt; Brixy &gt; التخزين &gt; مسح البيانات</em>، أو بإلغاء تثبيت اللعبة.</li><li><strong>حذف مراسلات الدعم:</strong> في حال تواصلك عبر البريد وترغب في حذف جميع المراسلات من خوادمنا بشكل نهائي:</li></ul><div class="policy-highlight-box" style="border-left-color: #ec4899;"><strong>طريقة تقديم طلب الحذف:</strong> أرسل بريداً بعنوان <code>"Data Deletion Request - Brixy"</code> إلى <a href="mailto:manootech2030@gmail.com?subject=Data%20Deletion%20Request%20-%20Brixy" style="color: #f472b6;"><strong>manootech2030@gmail.com</strong></a>، وسيتم تأكيد وتنفيذ الحذف خلال 48 ساعة عمل كحد أقصى.</div>`,
+
+    brixy_sec8_title: "8. أمان البيانات والحماية التقنية",
+    brixy_sec8_body: `<p>نحرص على تطبيق أعلى معايير الحماية التقنية:</p><ul><li><strong>اتصالات مشفرة:</strong> تتم جميع الاتصالات الشبكية التقنية (مثل فحص التحديثات) عبر بروتوكولات التشفير الحديثة (HTTPS / TLS 1.3).</li><li><strong>عزل التطبيق (Sandboxing):</strong> يعزل نظام الأندرويد ملفات اللعبة المحلية ويمنع التطبيقات الأخرى غير المصرح لها من قراءتها أو التلاعب بها.</li></ul>`,
+
+    brixy_sec9_title: "9. حقوق الملكية الفكرية واللعب العادل",
+    brixy_sec9_body: `<p>كافة الرسومات، وتصميمات قطع الحلوى والفواكه، والمؤثرات الصوتية، وميكانيكا اللعبة، وشعارات <strong>Brixy</strong>، والأكواد البرمجية هي ملكية فكرية حصرية لـ <strong>MANOO Tech</strong> ومحمية بالقوانين الدولية.</p><p>يُمنح اللاعب ترخيصاً شخصياً ترفيهياً غير تجاري للاستمتاع باللعبة عبر قنوات التوزيع الرسمية (مثل Google Play). يُحظر تماماً استخراج الأصول الرسومية أو تفكيك اللعبة هندسياً أو إعادة توزيعها دون إذن رسمي مسبق.</p>`,
+
+    brixy_sec10_title: "10. التواصل المباشر مع مطور اللعبة",
+    brixy_sec10_body: `<p>إذا كان لديك أي استفسار يتعلق بهذه السياسة أو أمان الأطفال في Brixy، فإن فريقنا الهندسي متاح للتواصل مباشرة:</p><div class="policy-contact-banner" style="border-color: rgba(236, 72, 153, 0.3);"><h4 data-i18n="brixy_contact_banner_title">فريق الامتثال والدعم بلعبة Brixy - MANOO Tech</h4><p data-i18n="brixy_contact_banner_sub">نقطة التواصل المباشرة للامتثال لمتجر Google Play، واستفسارات أولياء الأمور، وطلبات حذف البيانات.</p><a href="mailto:manootech2030@gmail.com?subject=Brixy%20Privacy%20Inquiry" class="btn-primary" style="background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>manootech2030@gmail.com</span></a></div>`,
+    brixy_contact_banner_title: "فريق الامتثال والدعم بلعبة Brixy - MANOO Tech",
+    brixy_contact_banner_sub: "نقطة التواصل المباشرة للامتثال لمتجر Google Play، واستفسارات أولياء الأمور، وطلبات حذف البيانات."
   }
 };
 

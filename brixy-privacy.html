@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Brixy Match-3 | MANOO Tech</title>
+  <meta name="description" content="Official Google Play Privacy Policy for Brixy Match-3 (com.aistudio.brixy.kwxyzq) developed by MANOO Tech. Transparent data handling, permissions, COPPA compliance, and security.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Brixy App-specific banner styling */
+    .app-meta-card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: var(--bg-card);
+      border: 1px solid rgba(236, 72, 153, 0.25);
+      border-radius: 18px;
+      padding: 20px 24px;
+      margin: 0 auto 32px;
+      max-width: 860px;
+      text-align: left;
+      box-shadow: 0 4px 20px rgba(236, 72, 153, 0.08);
+    }
+    [dir="rtl"] .app-meta-card {
+      text-align: right;
+    }
+    .app-meta-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      object-fit: cover;
+      box-shadow: 0 4px 14px rgba(236, 72, 153, 0.3);
+      border: 1px solid rgba(236, 72, 153, 0.4);
+      flex-shrink: 0;
+    }
+    .app-meta-details {
+      flex: 1;
+    }
+    .app-meta-title {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+    .app-meta-pkg {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: #f472b6;
+      word-break: break-all;
+      margin-bottom: 6px;
+    }
+    .app-meta-publisher {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+    .app-meta-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #f472b6;
+      text-decoration: none;
+    }
+    .app-meta-link:hover {
+      text-decoration: underline;
+    }
+    .brixy-badge {
+      background: rgba(236, 72, 153, 0.12);
+      border-color: rgba(236, 72, 153, 0.3);
+      color: #f472b6;
+    }
+    .brixy-badge .pulse-dot {
+      background: #ec4899;
+      box-shadow: 0 0 8px #ec4899;
+    }
+    .brixy-gradient-text {
+      background: linear-gradient(135deg, #ec4899 0%, #a855f7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @media (max-width: 600px) {
+      .app-meta-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 16px;
+      }
+      [dir="rtl"] .app-meta-card {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="matrixCanvas"></canvas>
+
+  <!-- ==========================================================================
+       Header / Navbar
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      
+      <!-- Brand Logo -->
+      <a href="index.html#home" class="brand-logo" id="nav-brand" aria-label="MANOO Tech Home">
+        <img src="assets/images/logo-icon.png" alt="MANOO Tech Logo" class="brand-icon-img">
+        <div class="brand-text-group" dir="ltr">
+          <span class="brand-name" dir="ltr"><bdi>MANOO</bdi> <span class="gradient-cyan"><bdi>Tech</bdi></span></span>
+          <span class="brand-tagline" dir="ltr"><bdi>Software &amp; Apps Studio</bdi></span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html#home" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="index.html#apps" class="nav-link" data-i18n="nav_apps">Flagship Apps</a></li>
+          <li><a href="muziplay-privacy.html" class="nav-link">MuziPlay Policy</a></li>
+          <li><a href="privacy.html" class="nav-link" data-i18n="nav_general_policy">Studio Policy</a></li>
+          <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities: Language Toggle & Theme Toggle -->
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button class="nav-tool-btn" id="langToggleBtn" aria-label="Toggle Language" title="Switch Language">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span id="langBtnText">العربية</span>
+        </button>
+
+        <!-- Theme Switcher -->
+        <button class="nav-tool-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode">
+          <span id="themeToggleIcon">
+            <svg class="theme-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Back to Home CTA -->
+        <a href="index.html" class="btn-primary" id="nav-cta-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          <span data-i18n="policy_back_home">Back to Studio</span>
+        </a>
+
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Privacy Policy Main Section
+         ========================================================================== -->
+    <section class="privacy-page-section">
+      <div class="container">
+
+        <!-- Hero Header -->
+        <div class="privacy-hero-wrap">
+          <div class="section-badge brixy-badge">
+            <span class="pulse-dot"></span>
+            <span data-i18n="brixy_priv_badge">Official Game Privacy Policy</span>
+          </div>
+          <h1 class="privacy-hero-title" data-i18n="brixy_priv_hero_title">
+            Brixy Match-3 <span class="brixy-gradient-text">Privacy Policy</span>
+          </h1>
+          <p class="privacy-hero-desc" data-i18n="brixy_priv_hero_sub">
+            Comprehensive Privacy &amp; Child Protection Policy for the Brixy Match-3 Android mobile game. This policy details our strict on-device data handling, offline storage, COPPA compliance, and alignment with Google Play Families &amp; Developer Policies.
+          </p>
+
+          <!-- App Metadata Summary Card -->
+          <div class="app-meta-card">
+            <img src="assets/images/brixy-icon.jpg" alt="Brixy Official Game Icon" class="app-meta-icon">
+            <div class="app-meta-details">
+              <div class="app-meta-title">Brixy — Sweet Candy &amp; Fruit Match-3 Adventure</div>
+              <div class="app-meta-pkg" dir="ltr">Package ID: <strong>com.aistudio.brixy.kwxyzq</strong></div>
+              <div class="app-meta-publisher" data-i18n="brixy_priv_pub">Developer &amp; Publisher: <strong>MANOO Tech</strong> • Contact: <strong>manootech2030@gmail.com</strong></div>
+              <a href="https://play.google.com/store/apps/details?id=com.aistudio.brixy.kwxyzq" target="_blank" rel="noopener noreferrer" class="app-meta-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3 20.5v-17c0-.83.67-1.5 1.5-1.5.34 0 .66.12.92.34L19.5 11.2c.67.45.85 1.35.4 2.02-.1.15-.24.28-.4.38L5.42 22.16c-.26.22-.58.34-.92.34-.83 0-1.5-.67-1.5-1.5z"/>
+                </svg>
+                <span data-i18n="brixy_priv_view_play">View on Google Play Store</span> &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="privacy-meta-bar">
+            <span>🛡️ <strong data-i18n="policy_meta_compliance">Google Play &amp; GDPR Compliant</strong></span>
+            <span>•</span>
+            <span>🎮 <strong data-i18n="brixy_meta_families">Google Play Families &amp; COPPA Safe</strong></span>
+            <span>•</span>
+            <span data-i18n="brixy_priv_last_updated">Effective Date: October 2026 | Last Updated: October 31, 2026</span>
+          </div>
+        </div>
+
+        <!-- Privacy Grid Layout: Sticky TOC + Content Stream -->
+        <div class="privacy-layout">
+          
+          <!-- Sticky Sidebar TOC (Desktop) -->
+          <aside class="privacy-sidebar">
+            <div class="privacy-toc-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="8" y1="6" x2="21" y2="6"></line>
+                <line x1="8" y1="12" x2="21" y2="12"></line>
+                <line x1="8" y1="18" x2="21" y2="18"></line>
+                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+              </svg>
+              <span data-i18n="policy_toc_heading">Policy Sections</span>
+            </div>
+            <ul class="privacy-toc-list">
+              <li><a href="#sec-scope" class="privacy-toc-link" data-i18n="brixy_toc_1">1. Scope &amp; Game Identity</a></li>
+              <li><a href="#sec-zero-data" class="privacy-toc-link" data-i18n="brixy_toc_2">2. Zero Personal Data Sale</a></li>
+              <li><a href="#sec-permissions" class="privacy-toc-link" data-i18n="brixy_toc_3">3. Android Permissions</a></li>
+              <li><a href="#sec-storage" class="privacy-toc-link" data-i18n="brixy_toc_4">4. Local Gameplay Storage</a></li>
+              <li><a href="#sec-ads" class="privacy-toc-link" data-i18n="brixy_toc_5">5. Advertising &amp; SDKs</a></li>
+              <li><a href="#sec-children" class="privacy-toc-link" data-i18n="brixy_toc_6">6. Children &amp; Families (COPPA)</a></li>
+              <li><a href="#sec-deletion" class="privacy-toc-link" data-i18n="brixy_toc_7">7. User Rights &amp; Deletion</a></li>
+              <li><a href="#sec-security" class="privacy-toc-link" data-i18n="brixy_toc_8">8. Security &amp; Encryption</a></li>
+              <li><a href="#sec-terms" class="privacy-toc-link" data-i18n="brixy_toc_9">9. Intellectual Property</a></li>
+              <li><a href="#sec-contact" class="privacy-toc-link" data-i18n="brixy_toc_10">10. Contact Developer</a></li>
+            </ul>
+          </aside>
+
+          <!-- Main Policy Stream -->
+          <div class="privacy-content-stream">
+
+            <!-- Card 1: Scope & Game Identity -->
+            <article class="policy-card" id="sec-scope">
+              <div class="policy-card-header">
+                <div class="policy-card-icon" style="color: #ec4899; background: rgba(236, 72, 153, 0.1);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                    <path d="M6 12h4m-2-2v4m7-2a1 1 0 1 0 2 0 1 1 0 1 0-2 0m3-2a1 1 0 1 0 2 0 1 1 0 1 0-2 0"></path>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="brixy_sec1_title">1. Scope &amp; Game Identity</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="brixy_sec1_body">
+                <p>
+                  This Privacy Policy applies solely to the Android casual mobile game <strong>Brixy</strong> (Application ID: <code>com.aistudio.brixy.kwxyzq</code>), developed, operated, and published by <strong>MANOO Tech</strong> ("we", "our", or "the Studio").
+                </p>
+                <p>
+                  Brixy is an arcade-style casual match-3 puzzle game featuring colorful sweets, jelly drops, cascade combos, dynamic power-up boosters (such as rockets, bombs, and hammers), and hundreds of handcrafted puzzle levels running at a silky 60 FPS.
+                </p>
+                <p>
+                  By installing, updating, or playing Brixy, you acknowledge the terms described in this policy. If you do not agree with any terms, please discontinue use of the game.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 2: Zero Personal Data Sale & Privacy by Design -->
+            <article class="policy-card" id="sec-zero-data">
+              <div class="policy-card-header">
+                <div class="policy-card-icon" style="color: #ec4899; background: rgba(236, 72, 153, 0.1);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="brixy_sec2_title">2. Privacy by Design &amp; Zero Personal Data Sale</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="brixy_sec2_body">
+                <p>
+                  Brixy is engineered strictly under a <strong>Privacy-by-Design</strong> philosophy. You do not need to create an account, register, log in with social media, or disclose any personal identity (such as your full name, email, phone number, address, or payment details) to play the game.
+                </p>
+                <div class="policy-highlight-box" style="border-left-color: #ec4899;">
+                  <strong>Zero Personal Data Sale:</strong> We do <em>not</em> collect, log, sell, rent, monetize, or broker your personal information, address books, location coordinates, photos, or personal files to data brokers, advertising aggregators, or third parties.
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3: Android Device Permissions -->
+            <article class="policy-card" id="sec-permissions">
+              <div class="policy-card-header">
+                <div class="policy-card-icon" style="color: #ec4899; background: rgba(236, 72, 153, 0.1);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="brixy_sec3_title">3. Android Permissions &amp; Hardware Usage</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="brixy_sec3_body">
+                <p>
+                  Brixy requests only the absolute minimum runtime permissions required to deliver an immersive casual gaming experience:
+                </p>
+                <ul>
+                  <li>
+                    <strong>VIBRATE (Haptic Feedback):</strong>
+                    Used purely on-device to trigger short, tactile vibrations when you match candies, detonate explosive boosters (rockets/bombs), or clear levels. You can disable haptic feedback at any time within the game settings menu.
+                  </li>
+                  <li>
+                    <strong>INTERNET &amp; ACCESS_NETWORK_STATE:</strong>
+                    Used strictly to verify app licensing and integrity via Google Play Services, download periodic game updates, and load contextual, family-safe advertisements (if applicable).
+                  </li>
+                  <li>
+                    <strong>WAKE_LOCK:</strong>
+                    Used to prevent your phone screen from dimming or falling asleep while actively playing an ongoing puzzle stage.
+                  </li>
+                  <li>
+                    <strong>No Sensitive Permissions:</strong>
+                    Brixy does <em>not</em> request access to your device contacts, precise GPS location, microphone, camera, or external storage files.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card 4: Local Storage & Gameplay Progression -->
+            <article class="policy-card" id="sec-storage">
+              <div class="policy-card-header">
+                <div class="policy-card-icon" style="color: #ec4899; background: rgba(236, 72, 153, 0.1);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                    <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                    <polyline points="7 3 7 8 15 8"></polyline>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="brixy_sec4_title">4. On-Device Storage &amp; Gameplay Progression</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="brixy_sec4_body">
+                <p>
+                  All data associated with your gameplay is stored locally inside the application's isolated sandboxed storage on your device:
+                </p>
+                <ul>
+                  <li><strong>Stage Progression:</strong> Levels completed, high scores, and stars earned (1–3 stars).</li>
+                  <li><strong>Inventory &amp; Boosters:</strong> Collected hammers, rockets, explosive bombs, and board-clearing power-ups.</li>
+                  <li><strong>Preferences:</strong> Sound effects volume, background music toggle, and haptic feedback settings.</li>
+                  <li><strong>Offline Playability:</strong> Because progression is saved locally, Brixy is fully playable offline without requiring an active internet connection.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card 5: Advertising & Third-Party SDKs -->
+            <article class="policy-card" id="sec-ads">
+              <div class="policy-card-header">
+                <div class="policy-card-icon" style="color: #ec4899; background: rgba(236, 72, 153, 0.1);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="brixy_sec5_title">5. Advertising, Analytics &amp; Third-Party Services</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="brixy_sec5_body">
+                <p>
+                  To support free access and maintain performance stability, Brixy may integrate certified Google developer SDKs:
+                </p>
+                <ul>
+                  <li><strong>Google Play Services:</strong> Used for in-app updates, platform security verification, and app integrity. Subject to the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="gradient-cyan">Google Privacy Policy</a>.</li>
+                  <li><strong>Family-Safe Advertising:</strong> Any in-game ads served (such as rewarded video ads to earn bonus boosters) strictly adhere to Google Play Families Policy guidelines. Ads are contextual and vetted to ensure no inappropriate or mature content is ever shown.</li>
+                  <li><strong>No Behavioral Tracking for Minors:</strong> We prohibit behavioral advertising or cross-app interest tracking for children. You can reset or delete your Google Advertising ID anytime via <em>Android Settings &gt; Google &gt; Ads</em>.</li>
+                  <li><strong>Anonymous Diagnostics:</strong> Aggregated, anonymous crash telemetry (such as device model, OS build, and stack trace logs) helps us fix bugs and prevent frame drops without identifying individual players.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card 6: Children's Privacy & Families Policy -->
+            <article class="policy-card" id="sec-children">
+              <div class="policy-card-header">
+                <div class="policy-card-icon" style="color: #ec4899; background: rgba(236, 72, 153, 0.1);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="brixy_sec6_title">6. Children's Privacy (COPPA &amp; Google Play Families Policy)</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="brixy_sec6_body">
+                <p>
+                  Brixy is designed as a family-friendly game appealing to players of all ages. We take children's privacy with the utmost seriousness:
+                </p>
+                <ul>
+                  <li><strong>COPPA &amp; GDPR-K Compliance:</strong> We strictly comply with the Children's Online Privacy Protection Act (COPPA) and General Data Protection Regulation for Kids (GDPR-K).</li>
+                  <li><strong>No Personal Data Collection:</strong> We do not knowingly collect, request, or store personal information from children under 13 (or under 16 in the European Economic Area).</li>
+                  <li><strong>Safe Ad Environment:</strong> In compliance with Google Play Families Policy, all ad SDKs utilized in Brixy are certified and configured with <code>tagForChildDirectedTreatment</code> to prevent personalized tracking.</li>
+                  <li><strong>Parental Rights:</strong> If a parent or guardian believes their child has submitted personal details to us without consent, please contact us immediately at <a href="mailto:manootech2030@gmail.com" style="color: #f472b6;">manootech2030@gmail.com</a>, and we will promptly purge such data.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card 7: User Rights & Data Deletion -->
+            <article class="policy-card" id="sec-deletion">
+              <div class="policy-card-header">
+                <div class="policy-card-icon" style="color: #ec4899; background: rgba(236, 72, 153, 0.1);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="3 6 5 6 21 6"></polyline>
+                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="brixy_sec7_title">7. User Rights &amp; Data Deletion Mechanism</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="brixy_sec7_body">
+                <p>
+                  In accordance with Google Play Developer Policy and GDPR / CCPA privacy frameworks:
+                </p>
+                <ul>
+                  <li><strong>Resetting Game Data Locally:</strong> You can wipe all stored level progress, star ratings, and preferences at any time by going to <em>Android Settings &gt; Apps &gt; Brixy &gt; Storage &gt; Clear Data</em>, or by uninstalling the application.</li>
+                  <li><strong>Support Records Deletion:</strong> If you have sent support emails or queries to our developer address and wish to have all correspondence permanently removed from our mail servers:</li>
+                </ul>
+                <div class="policy-highlight-box" style="border-left-color: #ec4899;">
+                  <strong>Submit a Deletion Request:</strong> Send an email with subject <code>"Data Deletion Request - Brixy"</code> to <a href="mailto:manootech2030@gmail.com?subject=Data%20Deletion%20Request%20-%20Brixy" style="color: #f472b6;"><strong>manootech2030@gmail.com</strong></a>. All associated email correspondence will be permanently purged within 48 business hours.
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 8: Data Security & Technical Safeguards -->
+            <article class="policy-card" id="sec-security">
+              <div class="policy-card-header">
+                <div class="policy-card-icon" style="color: #ec4899; background: rgba(236, 72, 153, 0.1);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="brixy_sec8_title">8. Data Security &amp; Technical Safeguards</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="brixy_sec8_body">
+                <p>
+                  We prioritize your digital safety with industry-standard technical measures:
+                </p>
+                <ul>
+                  <li><strong>Encrypted Connections:</strong> Any technical communications initiated by Brixy (such as update checks) utilize modern encryption protocols (HTTPS / TLS 1.3).</li>
+                  <li><strong>Application Sandboxing:</strong> Android's application isolation architecture prevents unauthorized third-party apps from reading or modifying Brixy's local save files.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card 9: Terms & Intellectual Property -->
+            <article class="policy-card" id="sec-terms">
+              <div class="policy-card-header">
+                <div class="policy-card-icon" style="color: #ec4899; background: rgba(236, 72, 153, 0.1);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="brixy_sec9_title">9. Intellectual Property &amp; Fair Play</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="brixy_sec9_body">
+                <p>
+                  All graphical assets, candy illustrations, fruit icons, animations, booster mechanics, sound effects, logos, and code related to <strong>Brixy</strong> are the proprietary intellectual property of <strong>MANOO Tech</strong>.
+                </p>
+                <p>
+                  You are granted a personal, non-commercial, revocable license to install and play the game via official distribution channels (such as the Google Play Store). Decompilation, extraction of artistic assets, or unauthorized redistribution is strictly prohibited.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 10: Official Contact & Developer Information -->
+            <article class="policy-card" id="sec-contact">
+              <div class="policy-card-header">
+                <div class="policy-card-icon" style="color: #ec4899; background: rgba(236, 72, 153, 0.1);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <h2 class="policy-card-title" data-i18n="brixy_sec10_title">10. Contact Developer &amp; Data Controller</h2>
+              </div>
+              <div class="policy-card-body" data-i18n="brixy_sec10_body">
+                <p>
+                  If you have questions, feedback, or regulatory inquiries regarding this Privacy Policy or Brixy's child-safe practices, our engineering team is directly reachable:
+                </p>
+                <div class="policy-contact-banner" style="border-color: rgba(236, 72, 153, 0.3);">
+                  <h4 data-i18n="brixy_contact_banner_title">MANOO Tech — Brixy Compliance &amp; Support</h4>
+                  <p data-i18n="brixy_contact_banner_sub">Direct point of contact for Google Play compliance, parental questions, and data deletion requests.</p>
+                  <a href="mailto:manootech2030@gmail.com?subject=Brixy%20Privacy%20Inquiry" class="btn-primary" style="background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <span>manootech2030@gmail.com</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-main-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand-summary">
+          <a href="index.html#home" class="brand-logo" aria-label="MANOO Tech">
+            <img src="assets/images/logo-icon.png" alt="MANOO Tech Logo" class="brand-icon-img">
+            <span class="brand-name">
+              <bdi dir="ltr">MANOO</bdi> <span class="gradient-cyan"><bdi dir="ltr">Tech</bdi></span>
+            </span>
+          </a>
+          <p data-i18n="footer_summary">
+            Architecting next-generation mobile applications and high-impact web platforms. Committed to craftsmanship, performance, and Google Play compliance.
+          </p>
+          <div class="footer-status-pill">
+            <span class="status-indicator-dot"></span>
+            <span style="color: var(--text-dim);" data-i18n="footer_status_label">Studio Status:</span>
+            <strong data-i18n="footer_status_val">Open for Innovation</strong>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_nav_title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html#home" data-i18n="nav_home">Home Overview</a></li>
+            <li><a href="index.html#apps" data-i18n="nav_apps">Flagship Applications</a></li>
+            <li><a href="muziplay-privacy.html">MuziPlay Policy</a></li>
+            <li><a href="privacy.html" data-i18n="nav_general_policy">Studio General Policy</a></li>
+            <li><a href="index.html#contact" data-i18n="nav_contact">Get In Touch</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Flagship Products -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_apps_title">Google Play Apps</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html#app-muziplay">MuziPlay Media Hub</a></li>
+            <li><a href="index.html#app-brixy">Brixy Match-3 Puzzle</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.aistudio.muziplay.xnxfyx" target="_blank" rel="noopener">MuziPlay on Google Play</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.aistudio.brixy.kwxyzq" target="_blank" rel="noopener">Brixy on Google Play</a></li>
+            <li><a href="brixy-privacy.html" style="color: #f472b6;">Brixy Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact info -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_hq_title">Headquarters</h4>
+          <ul class="footer-nav-list">
+            <li><span style="color: var(--text-dim);" data-i18n="footer_email_label">Direct Email:</span></li>
+            <li><a href="mailto:manootech2030@gmail.com" class="gradient-cyan">manootech2030@gmail.com</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div data-i18n="footer_rights">
+          © 2026 MANOO Tech. All rights reserved. Technology &amp; Software Development.
+        </div>
+        <div class="footer-legal-links">
+          <a href="brixy-privacy.html" style="color: #f472b6;">Brixy Privacy Policy</a>
+          <a href="muziplay-privacy.html">MuziPlay Policy</a>
+          <a href="privacy.html" data-i18n="footer_privacy">Studio Policy</a>
+          <a href="privacy.html#terms" data-i18n="footer_terms">Terms of Service</a>
+          <a href="#" data-i18n="footer_top">Back to Top ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Master Script -->
+  <script src="script.js"></script>
+</body>
+</html>
