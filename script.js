@@ -203,7 +203,58 @@ const translations = {
     sec9_title: "9. Contact the Studio Data Controller",
     sec9_body: `<p>If you have questions, regulatory inquiries, or feedback regarding this Privacy Policy and our data handling practices, our engineering and compliance team is directly available:</p><div class="policy-contact-banner"><h4 data-i18n="policy_banner_title">MANOO Tech Engineering & Compliance</h4><p data-i18n="policy_banner_sub">Direct point of contact for Google Play compliance, data rights, and technical inquiries.</p><a href="mailto:manootech2030@gmail.com" class="btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>manootech2030@gmail.com</span></a></div>`,
     policy_banner_title: "MANOO Tech Engineering & Compliance",
-    policy_banner_sub: "Direct point of contact for Google Play compliance, data rights, and technical inquiries."
+    policy_banner_sub: "Direct point of contact for Google Play compliance, data rights, and technical inquiries.",
+
+    // MuziPlay Specific Privacy Policy (English)
+    nav_general_policy: "Studio Policy",
+    muzi_priv_badge: "Official Application Privacy Policy",
+    muzi_priv_hero_title: `MuziPlay <span class="gradient-text">Privacy Policy</span>`,
+    muzi_priv_hero_sub: "Comprehensive Privacy & Data Protection Policy for the MuziPlay Android application. This policy details our strict on-device data handling, runtime permissions, and compliance with Google Play Developer Policies.",
+    muzi_priv_pub: `Developer & Publisher: <strong>MANOO Tech</strong> • Contact: <strong>manootech2030@gmail.com</strong>`,
+    muzi_priv_view_play: "View on Google Play Store",
+    muzi_priv_last_updated: "Effective Date: October 2026 | Last Updated: October 31, 2026",
+    muzi_toc_1: "1. Scope & App Identity",
+    muzi_toc_2: "2. Zero Data Collection & Sale",
+    muzi_toc_3: "3. Android Permissions",
+    muzi_toc_4: "4. Local Storage & Audio Processing",
+    muzi_toc_5: "5. Streaming & Downloader Privacy",
+    muzi_toc_6: "6. Third-Party Services & SDKs",
+    muzi_toc_7: "7. User Rights & Data Deletion",
+    muzi_toc_8: "8. Children's Privacy (COPPA)",
+    muzi_toc_9: "9. Data Security & Encryption",
+    muzi_toc_10: "10. Contact & Controller",
+
+    muzi_sec1_title: "1. Scope & Application Identity",
+    muzi_sec1_body: `<p>This Privacy Policy applies solely to the Android application <strong>MuziPlay</strong> (Application ID: <code>com.aistudio.muziplay.xnxfyx</code>), developed, published, and maintained by <strong>MANOO Tech</strong> ("we", "our", or "the Studio").</p><p>MuziPlay is an all-in-one Android media utility that features an ad-free streaming browser, high-speed universal media downloader, synchronized lyrics engine, and an offline studio-grade DSP audio player with Equalizer Pro and Smart Audio Isolation.</p><p>By installing, updating, or using MuziPlay, you agree to the practices outlined in this policy. If you do not agree with any terms, please do not install or use the application.</p>`,
+
+    muzi_sec2_title: "2. Privacy by Design & Zero Personal Data Sale",
+    muzi_sec2_body: `<p>MuziPlay is engineered under a strict <strong>Privacy-by-Design</strong> philosophy. The application does not require you to create an account, log in, or provide any personal identification (such as name, email address, phone number, physical address, or payment details) to access its core features.</p><div class="policy-highlight-box"><strong>Zero Personal Data Sale:</strong> We do <em>not</em> collect, log, sell, rent, lease, or monetize your personal identity, contact lists, GPS location, device contacts, or local audio files. We have never sold personal data to data brokers or third parties, and we never will.</div>`,
+
+    muzi_sec3_title: "3. Android Runtime Permissions & Technical Necessity",
+    muzi_sec3_body: `<p>In compliance with Google Play Developer Policy requirements, MuziPlay requests only the minimum necessary runtime permissions strictly required to perform its media playback and download functions:</p><ul><li><strong>READ_MEDIA_AUDIO / READ_EXTERNAL_STORAGE:</strong> Required solely to discover, scan, and play your locally stored music tracks and display embedded album art inside the audio player. Your audio tracks remain strictly on your device; they are never uploaded, analyzed on cloud servers, or transmitted externally.</li><li><strong>FOREGROUND_SERVICE & FOREGROUND_SERVICE_MEDIA_PLAYBACK:</strong> Required to maintain smooth, continuous audio playback when you navigate outside the app or when your phone screen is locked. It provides the persistent notification controls (Play, Pause, Skip, Previous).</li><li><strong>POST_NOTIFICATIONS:</strong> Required on Android 13 (API 33) and above to display playback status notifications, media controls, and download progress.</li><li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Required to enable user-initiated media streaming, fetch synchronized lyrics requested by the user, verify app updates via Google Play, and check network availability.</li><li><strong>WAKE_LOCK:</strong> Required to prevent Android system sleep from interrupting continuous music playback while your screen is off.</li></ul>`,
+
+    muzi_sec4_title: "4. Local Storage & On-Device Audio DSP Processing",
+    muzi_sec4_body: `<p>MuziPlay incorporates high-fidelity audio engineering features, including Equalizer Pro, Bass Boost, 3D Spatial Audio, and Smart Audio Isolation (vocal filtering):</p><ul><li><strong>100% On-Device Processing:</strong> All audio equalization, frequency processing, and sound isolation algorithms execute entirely within your device's local CPU/DSP hardware. None of your audio data is sent to external servers or AI cloud processors.</li><li><strong>Playlists & Favorites:</strong> Your custom playlists, favorite tracks, playback history, and equalizer presets are stored strictly inside your local app sandbox.</li></ul>`,
+
+    muzi_sec5_title: "5. Streaming Browser & Downloader Privacy",
+    muzi_sec5_body: `<p>When using MuziPlay's streaming browser or downloading media:</p><ul><li><strong>Browsing Privacy:</strong> The in-app streaming browser connects directly between your device and the destination websites you choose to visit. MANOO Tech does not act as a proxy, nor do we monitor, inspect, log, or record your browsing URLs, search queries, or downloaded files.</li><li><strong>Downloaded Content:</strong> Files downloaded via the app are saved directly to your device storage in the destination folder selected by you. We maintain no remote log or catalog of what you download.</li></ul>`,
+
+    muzi_sec6_title: "6. Third-Party Services & Google Play SDKs",
+    muzi_sec6_body: `<p>To deliver seamless app updates, license validation, and crash stability, MuziPlay integrates official Google developer tools:</p><ul><li><strong>Google Play Services:</strong> Used for app integrity, licensing, in-app updates, and security verification. Subject to Google's Privacy Policy.</li><li><strong>Anonymized Diagnostics & Crash Reports:</strong> If an unforeseen app crash occurs, standard anonymous telemetry (such as device model, Android OS version, and stack trace logs) may be collected to help us resolve the crash. No personal data or user identifiers are included in these crash reports.</li><li><strong>Advertising (if applicable):</strong> If an ad-supported version is deployed, Google advertising networks may serve contextual or standard ads in strict compliance with Google Play Developer Policies. You can reset or delete your Google Advertising ID anytime via <em>Android Settings &gt; Google &gt; Ads</em>.</li></ul>`,
+
+    muzi_sec7_title: "7. User Rights & Data Deletion Mechanism",
+    muzi_sec7_body: `<p>In adherence to the General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), and Google Play App Data Deletion requirements:</p><ul><li><strong>Local Data Removal:</strong> You can completely erase all local app data, preferences, playlists, and cached lyrics at any time simply by clearing app storage via <em>Android Settings &gt; Apps &gt; MuziPlay &gt; Clear Storage / Clear Data</em>, or by uninstalling the application.</li><li><strong>Support Communications Deletion:</strong> If you have ever emailed our support team and wish to have all correspondence, email records, and diagnostic logs permanently deleted, you may submit a request:</li></ul><div class="policy-highlight-box"><strong>Submit a Deletion Request:</strong> Send an email with subject <code>"Data Deletion Request - MuziPlay"</code> to <a href="mailto:manootech2030@gmail.com?subject=Data%20Deletion%20Request%20-%20MuziPlay" class="gradient-cyan"><strong>manootech2030@gmail.com</strong></a>. All associated email correspondence will be permanently purged within 48 business hours.</div>`,
+
+    muzi_sec8_title: "8. Children's Privacy (COPPA Compliance)",
+    muzi_sec8_body: `<p>MuziPlay is designed for a general audience and is not directed to children under the age of 13 (or under 16 within the European Economic Area). We do not knowingly collect personal information from children.</p><p>If you are a parent or legal guardian and believe that your child has provided personal information to us, please contact us immediately at <a href="mailto:manootech2030@gmail.com" class="gradient-cyan">manootech2030@gmail.com</a>, and we will promptly take steps to delete any such data.</p>`,
+
+    muzi_sec9_title: "9. Data Security & Encryption Standards",
+    muzi_sec9_body: `<p>We prioritize user data protection through industry-standard technical safeguards:</p><ul><li><strong>Encryption in Transit:</strong> Any outgoing network requests initiated by MuziPlay (such as fetching lyrics or verifying updates) utilize secure cryptographic protocols (HTTPS / TLS 1.3).</li><li><strong>Local Sandboxing:</strong> Android's application sandbox isolates MuziPlay from other apps on your device, preventing unauthorized third-party apps from accessing MuziPlay's internal files.</li></ul>`,
+
+    muzi_sec10_title: "10. Contact Developer & Data Controller",
+    muzi_sec10_body: `<p>If you have any questions, regulatory inquiries, or concerns regarding this Privacy Policy or MuziPlay's data protection practices, please contact our engineering and compliance team:</p><div class="policy-contact-banner"><h4 data-i18n="muzi_contact_banner_title">MANOO Tech — MuziPlay Compliance Team</h4><p data-i18n="muzi_contact_banner_sub">Direct point of contact for Google Play compliance, data rights, and technical queries.</p><a href="mailto:manootech2030@gmail.com?subject=MuziPlay%20Privacy%20Inquiry" class="btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>manootech2030@gmail.com</span></a></div>`,
+    muzi_contact_banner_title: "MANOO Tech — MuziPlay Compliance Team",
+    muzi_contact_banner_sub: "Direct point of contact for Google Play compliance, data rights, and technical queries."
   },
 
   ar: {
@@ -335,7 +386,58 @@ const translations = {
     sec9_title: "9. التواصل المباشر مع مسؤول الخصوصية بالاستوديو",
     sec9_body: `<p>إذا كان لديك أي استفسار قانوني، أو تنظيمي، أو فني يتعلق بهذه السياسة وممارسات أمان البيانات لدينا، فإن فريق الامتثال والهندسة متاح للتواصل مباشرة:</p><div class="policy-contact-banner"><h4 data-i18n="policy_banner_title">فريق الهندسة والامتثال بـ MANOO Tech</h4><p data-i18n="policy_banner_sub">نقطة التواصل المباشرة للامتثال لمتجر Google Play وحقوق البيانات والاستفسارات القانونية.</p><a href="mailto:manootech2030@gmail.com" class="btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>manootech2030@gmail.com</span></a></div>`,
     policy_banner_title: "فريق الهندسة والامتثال بـ MANOO Tech",
-    policy_banner_sub: "نقطة التواصل المباشرة للامتثال لمتجر Google Play وحقوق البيانات والاستفسارات القانونية."
+    policy_banner_sub: "نقطة التواصل المباشرة للامتثال لمتجر Google Play وحقوق البيانات والاستفسارات القانونية.",
+
+    // MuziPlay Specific Privacy Policy (Arabic)
+    nav_general_policy: "سياسة الاستوديو العامة",
+    muzi_priv_badge: "وثيقة سياسة الخصوصية الرسمية للتطبيق",
+    muzi_priv_hero_title: `سياسة خصوصية تطبيق <span class="gradient-text">MuziPlay</span>`,
+    muzi_priv_hero_sub: "سياسة الخصوصية وحماية البيانات الرسمية والشاملة لتطبيق الأندرويد MuziPlay. توضح هذه الوثيقة التزامنا الصارم بمعالجة البيانات محلياً داخل جهازك، وتفاصيل أذونات التشغيل، والامتثال الكامل لسياسات مطوري متجر Google Play.",
+    muzi_priv_pub: `المطور والناشر: <strong><bdi dir="ltr">MANOO Tech</bdi></strong> • للتواصل: <strong>manootech2030@gmail.com</strong>`,
+    muzi_priv_view_play: "مشاهدة التطبيق على متجر Google Play",
+    muzi_priv_last_updated: "تاريخ السريان: أكتوبر 2026 | آخر تحديث: 31 أكتوبر 2026",
+    muzi_toc_1: "1. النطاق وهوية التطبيق",
+    muzi_toc_2: "2. عدم جمع أو بيع البيانات",
+    muzi_toc_3: "3. أذونات نظام أندرويد",
+    muzi_toc_4: "4. التخزين ومعالجة الصوت محلياً",
+    muzi_toc_5: "5. خصوصية البث والتحميل",
+    muzi_toc_6: "6. خدمات الطرف الثالث وحزم SDK",
+    muzi_toc_7: "7. حقوق المستخدمين وحذف البيانات",
+    muzi_toc_8: "8. حماية خصوصية الأطفال (COPPA)",
+    muzi_toc_9: "9. أمان البيانات والتشفير",
+    muzi_toc_10: "10. التواصل مع المطور والمسؤول",
+
+    muzi_sec1_title: "1. النطاق وهوية التطبيق",
+    muzi_sec1_body: `<p>تنطبق سياسة الخصوصية هذه حصرياً وبشكل خاص على تطبيق نظام الأندرويد <strong>MuziPlay</strong> (معرّف الحزمة البرمجية: <code>com.aistudio.muziplay.xnxfyx</code>)، والمطور والمنشور والمُدار بالكامل بواسطة استوديو <strong><bdi dir="ltr">MANOO Tech</bdi></strong> («الاستوديو» أو «نحن»).</p><p>تطبيق MuziPlay هو مركز وسائط متكامل يجمع بين متصفح ويب لبث الوسائط بدون إعلانات، ومحمّل وسائط فائق السرعة، ومحرك مزامنة كلمات الأغاني (Lyrics)، ومشغل صوت احترافي بمعالجة DSP وميزات Equalizer Pro وعزل الصوت الذكي Smart Audio Isolation.</p><p>يعد تثبيتك أو استخدامك أو تحديثك لتطبيق MuziPlay موافقة صريحة على الممارسات والشروط الموضحة في هذه الوثيقة.</p>`,
+
+    muzi_sec2_title: "2. الخصوصية بالتصميم وعدم بيع البيانات الشخصية نهائياً",
+    muzi_sec2_body: `<p>تمت هندسة تطبيق MuziPlay وفق فلسفة صارمة تُعرف بـ <strong>الخصوصية بالتصميم (Privacy-by-Design)</strong>. لا يتطلب منك التطبيق إنشاء أي حساب، أو تسجيل الدخول، أو تقديم أي معلومات تعريفية شخصية (مثل الاسم، أو البريد الإلكتروني، أو رقم الهاتف، أو العنوان، أو بيانات الدفع) للوصول إلى ميزاته الأساسية.</p><div class="policy-highlight-box"><strong>عدم بيع البيانات نهائياً:</strong> نحن <em>لا نجمع، ولا نخزن، ولا نبيع، ولا نؤجر، ولا نتربح</em> من بيانات هويتك الشخصية، أو جهات اتصالك، أو موقعك الجغرافي، أو ملفاتك الصوتية. لم نقم أبداً ببيع بيانات شخصية لأي وسطاء بيانات أو أطراف ثالثة ولن نفعل ذلك إطلاقاً.</div>`,
+
+    muzi_sec3_title: "3. أذونات تشغيل نظام أندرويد والضرورة التقنية",
+    muzi_sec3_body: `<p>امتثالاً لمتطلبات سياسات مطوري متجر Google Play، يطلب تطبيق MuziPlay الحد الأدنى فقط من أذونات التشغيل اللازمة تقنياً لأداء وظائف تشغيل وتنزيل الوسائط:</p><ul><li><strong>READ_MEDIA_AUDIO / READ_EXTERNAL_STORAGE:</strong> مطلوب حصرياً لاكتشاف وفهرسة وتشغيل المقاطع الصوتية المخزنة على هاتفك وعرض أغلفة الألبومات. تظل ملفاتك الصوتية بالكامل داخل جهازك، ولا يتم أبداً رفعها أو فحصها على خوادم سحابية أو إرسالها خارج هاتفك.</li><li><strong>FOREGROUND_SERVICE & FOREGROUND_SERVICE_MEDIA_PLAYBACK:</strong> مطلوب لضمان استمرار تشغيل الموسيقى بسلاسة ودون انقطاع عند الخروج من التطبيق أو إغلاق الشاشة، وتوفير أزرار التحكم الثابتة في لوحة الإشعارات وشاشة القفل (تشغيل، إيقاف، المسار التالي، السابق).</li><li><strong>POST_NOTIFICATIONS:</strong> مطلوب في نظام أندرويد 13 (API 33) فما فوق لعرض إشعارات حالة التشغيل وأدوات التحكم في الوسائط ونسبة تقدم التنزيل.</li><li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> مطلوب لتمكين تشغيل البث عند طلبك، وتحميل كلمات الأغاني المتزامنة، والتحقق من سلامة التطبيق وتحديثاته عبر Google Play.</li><li><strong>WAKE_LOCK:</strong> مطلوب لمنع وضع السكون بالنظام من مقاطعة تشغيل المقاطع الصوتية أثناء قفل الشاشة.</li></ul>`,
+
+    muzi_sec4_title: "4. التخزين المحلي ومعالجة الصوت DSP داخل الجهاز",
+    muzi_sec4_body: `<p>يحتوي MuziPlay على ميزات هندسية صوتية فائقة الدقة تشمل معادل الصوت Equalizer Pro، وتضخيم Bass، والصوت المجسم 3D، وعزل الصوت الذكي Smart Audio Isolation:</p><ul><li><strong>معالجة داخل الجهاز بنسبة 100%:</strong> جميع خوارزميات معالجة الترددات وعزل الصوت تعمل كلياً على معالج جهازك المحلي. لا يتم إرسال أي صوتيات إلى خوادم خارجية أو معالجات سحابية.</li><li><strong>قوائم التشغيل والمفضلات:</strong> تُحفظ قوائم التشغيل الخاصة بك، وسجل الاستماع، وإعدادات المعادل حصرياً داخل مساحة التخزين المعزولة للتطبيق (Sandbox).</li></ul>`,
+
+    muzi_sec5_title: "5. خصوصية متصفح البث وتنزيل الوسائط",
+    muzi_sec5_body: `<p>عند استخدام متصفح البث أو تنزيل الوسائط داخل MuziPlay:</p><ul><li><strong>خصوصية التصفح:</strong> يتصل المتصفح مباشرة بين جهازك والمواقع التي تختار زيارتها. لا تعمل MANOO Tech كوسيط (Proxy)، ولا نراقب أو نسجل أو نفحص روابط التصفح أو استعلامات البحث أو الملفات المحملة.</li><li><strong>المحتوى المُنزّل:</strong> تُحفظ الملفات التي تقوم بتنزيلها مباشرة في مجلد التخزين الذي تحدده على هاتفك، ولا نحتفظ بأي سجلات أو فهارس لما تقوم بتنزيله.</li></ul>`,
+
+    muzi_sec6_title: "6. خدمات الطرف الثالث وحزم Google Play SDK",
+    muzi_sec6_body: `<p>لضمان استقرار التطبيق وتوفير التحديثات الموثوقة والتحقق من التراخيص، يتكامل MuziPlay مع أدوات مطوري Google الرسمية:</p><ul><li><strong>خدمات Google Play (Google Play Services):</strong> تُستخدم لأمان وسلامة التطبيق، وإجراء التحديثات السلسة، والتحقق من سلامة البيئة البرمجية. تخضع لسياسة خصوصية Google.</li><li><strong>تقارير الأعطال والتشخيص المجهولة:</strong> في حال حدوث عطل غير متوقع، قد يتم إرسال بيانات تقنية مجهولة المصدر (مثل طراز الهاتف وإصدار الأندرويد وسجل تتبع الخطأ) لمساعدتنا في إصلاح العطل بسرعة. لا تحتوي هذه التقارير على أي بيانات شخصية.</li><li><strong>شبكات الإعلانات (إن وجدت):</strong> في حال توفر إصدار مجاني مدعوم بإعلانات، قد تقدم شبكات Google إعلانات سياقية متوافقة تماماً مع معايير Google Play. يمكنك إعادة تعيين معرّف الإعلانات أو حذفه في أي وقت من إعدادات هاتفك.</li></ul>`,
+
+    muzi_sec7_title: "7. حقوق المستخدمين وآلية الحذف النهائي للبيانات",
+    muzi_sec7_body: `<p>التزاماً باللائحة العامة لحماية البيانات (GDPR) وقانون خصوصية المستهلك بكاليفورنيا (CCPA) ومتطلبات حذف بيانات التطبيقات في Google Play:</p><ul><li><strong>حذف البيانات المحلية:</strong> يمكنك مسح كافة بيانات التطبيق المحلية والإعدادات وقوائم التشغيل وكلمات الأغاني المؤقتة في أي وقت عبر <em>إعدادات الأندرويد &gt; التطبيقات &gt; MuziPlay &gt; مسح التخزين / مسح البيانات</em>، أو ببساطة بإلغاء تثبيت التطبيق.</li><li><strong>حذف سجلات الدعم الفني:</strong> إذا تواصلت سابقاً مع فريق الدعم وترغب في حذف جميع المراسلات وسجلات البريد نهائياً:</li></ul><div class="policy-highlight-box"><strong>طريقة تقديم طلب الحذف:</strong> أرسل بريداً بعنوان <code>"Data Deletion Request - MuziPlay"</code> إلى <a href="mailto:manootech2030@gmail.com?subject=Data%20Deletion%20Request%20-%20MuziPlay" class="gradient-cyan"><strong>manootech2030@gmail.com</strong></a>، وسيتم مسح وتأكيد حذف كافة المراسلات خلال 48 ساعة عمل.</div>`,
+
+    muzi_sec8_title: "8. حماية خصوصية الأطفال (COPPA)",
+    muzi_sec8_body: `<p>تطبيق MuziPlay مصمم وموجّه للجمهور العام، وليس موجهاً للأطفال دون سن 13 عاماً (أو دون سن 16 عاماً في المنطقة الاقتصادية الأوروبية). نحن لا نجمع عن قصد أي معلومات من الأطفال.</p><p>إذا كنت أحد الوالدين واكتشفت أن طفلك قد زودنا بمعلومات دون موافقتك، يرجى مراسلتنا فوراً عبر <a href="mailto:manootech2030@gmail.com" class="gradient-cyan">manootech2030@gmail.com</a> لمسحها في الحال.</p>`,
+
+    muzi_sec9_title: "9. معايير أمان وتشفير البيانات",
+    muzi_sec9_body: `<p>نطبق أفضل المعايير التقنية لحماية البيانات:</p><ul><li><strong>التشفير أثناء النقل:</strong> تتم كافة الطلبات الشبكية التي يطلبها التطبيق (مثل تنزيل الكلمات أو فحص التحديثات) عبر بروتوكولات مشفرة وآمنة (HTTPS / TLS 1.3).</li><li><strong>عزل التطبيق (Sandboxing):</strong> يعزل نظام الأندرويد تطبيق MuziPlay عن التطبيقات الأخرى، مما يمنع التطبيقات غير المصرح لها من الوصول لملفات التطبيق الداخلية.</li></ul>`,
+
+    muzi_sec10_title: "10. التواصل المباشر مع مطور التطبيق",
+    muzi_sec10_body: `<p>إذا كان لديك أي استفسار قانوني أو تنظيمي أو تقني يخص سياسة الخصوصية هذه أو ممارسات حماية البيانات في MuziPlay، فإن فريقنا متاح للتواصل مباشرة:</p><div class="policy-contact-banner"><h4 data-i18n="muzi_contact_banner_title">فريق الامتثال والهندسة بتطبيق MuziPlay - MANOO Tech</h4><p data-i18n="muzi_contact_banner_sub">نقطة التواصل المباشرة للامتثال لمتجر Google Play، وحقوق حذف البيانات، والاستفسارات التقنية.</p><a href="mailto:manootech2030@gmail.com?subject=MuziPlay%20Privacy%20Inquiry" class="btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>manootech2030@gmail.com</span></a></div>`,
+    muzi_contact_banner_title: "فريق الامتثال والهندسة بتطبيق MuziPlay - MANOO Tech",
+    muzi_contact_banner_sub: "نقطة التواصل المباشرة للامتثال لمتجر Google Play، وحقوق حذف البيانات، والاستفسارات التقنية."
   }
 };
 
