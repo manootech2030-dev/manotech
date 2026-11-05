@@ -159,3 +159,5 @@ triplelift.com, 8614, RESELLER, 6c33edb13117fd86
 triplelift.com, 14127, RESELLER, 6c33edb13117fd86
 lijit.com, 528770, RESELLER, fafdf38b16bf6b2b
 lijit.com, 606973, RESELLER, fafdf38b16bf6b2b
+monetrix.ai, 10761, RESELLER
+start.io, 131192070, RESELLER
