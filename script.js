@@ -158,8 +158,8 @@ const translations = {
     contact_submit_btn: "Send Project Inquiry",
 
     footer_summary: "Architecting next-generation mobile applications and high-impact web platforms. Committed to craftsmanship, performance, and Google Play compliance.",
-    video_en_title: "MuziPlay: English video",
-    video_ar_title: "MuziPlay: Arabic video",
+    video_en_title: "MANOO TECH: English video",
+    video_ar_title: "MANOO TECH: Arabic video",
     video_watch: "Watch on YouTube",
     social_badge: "Our Platforms",
     social_title: "Follow MANOO Tech",
@@ -405,8 +405,8 @@ const translations = {
     contact_submit_btn: "إرسال تفاصيل المشروع",
 
     footer_summary: "استوديو هندسي متخصص في بناء وتطوير تطبيقات الموبايل المتقدمة ومنصات الويب العصرية، مع الالتزام الصارم بمعايير الأداء ومتطلبات متجر Google Play.",
-    video_en_title: "MuziPlay: الفيديو الإنجليزي",
-    video_ar_title: "MuziPlay: الفيديو العربي",
+    video_en_title: "MANOO TECH: الفيديو الإنجليزي",
+    video_ar_title: "MANOO TECH: الفيديو العربي",
     video_watch: "شاهد على YouTube",
     social_badge: "منصاتنا",
     social_title: "تابع MANOO Tech",
