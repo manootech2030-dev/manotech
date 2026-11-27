@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAB to APK Studio | MANOO Tech</title>
+  <meta name="description" content="AAB to APK Studio by MANOO Tech: install AAB directly, convert AAB to APK, build AAB from APK, install XAPK and APKS, offline. Currently in closed testing on Google Play.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+  html[lang="ar"] .en-only{display:none !important}
+  html:not([lang="ar"]) .ar-only{display:none !important}
+  .app-page{padding:140px 0 70px}
+  .app-page-hero{display:flex;gap:28px;align-items:center;max-width:960px;margin:0 auto 36px;flex-wrap:wrap}
+  .app-page-hero img.icon{width:128px;height:128px;border-radius:28px;box-shadow:0 6px 24px rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.12)}
+  .app-page h1{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);margin:6px 0 10px}
+  .app-page .lead{color:var(--text-muted);font-size:1.05rem;line-height:1.8;max-width:900px;margin:0 auto 28px}
+  .status-pill{display:inline-flex;align-items:center;gap:8px;padding:5px 14px;border-radius:8px;font-size:.8rem;font-weight:600;background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.4);color:#f59e0b}
+  .info-card{max-width:960px;margin:0 auto 24px;background:var(--bg-card);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:24px 28px}
+  .info-card h2{font-family:var(--font-heading);font-size:1.3rem;margin-bottom:14px}
+  .info-card ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  .info-card li{line-height:1.7;color:var(--text-muted)}
+  .info-card li strong{color:var(--text-main)}
+  .vid-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;justify-items:center}
+  .vid-grid iframe{width:100%;max-width:315px;aspect-ratio:9/16;border:0;border-radius:14px}
+  .shots{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+  .shots img{height:420px;border-radius:16px;border:1px solid rgba(255,255,255,.12)}
+  .pkg{font-family:var(--font-mono);word-break:break-all}
+  .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+  @media(max-width:600px){.app-page-hero{flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="matrixCanvas"></canvas>
+
+  <!-- ==========================================================================
+       Header / Navbar
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      
+      <!-- Brand Logo -->
+      <a href="index.html#home" class="brand-logo" id="nav-brand" aria-label="MANOO Tech Home">
+        <img src="assets/images/logo-icon.png" alt="MANOO Tech Logo" class="brand-icon-img">
+        <div class="brand-text-group" dir="ltr">
+          <span class="brand-name" dir="ltr"><bdi>MANOO</bdi> <span class="gradient-cyan"><bdi>Tech</bdi></span></span>
+          <span class="brand-tagline" dir="ltr"><bdi>Software &amp; Apps Studio</bdi></span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html#home" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="index.html#apps" class="nav-link" data-i18n="nav_apps">Flagship Apps</a></li>
+          <li><a href="muziplay-privacy.html" class="nav-link">MuziPlay Policy</a></li>
+          <li><a href="privacy.html" class="nav-link" data-i18n="nav_general_policy">Studio Policy</a></li>
+          <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities: Language Toggle & Theme Toggle -->
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button class="nav-tool-btn" id="langToggleBtn" aria-label="Toggle Language" title="Switch Language">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span id="langBtnText">العربية</span>
+        </button>
+
+        <!-- Theme Switcher -->
+        <button class="nav-tool-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode">
+          <span id="themeToggleIcon">
+            <svg class="theme-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Back to Home CTA -->
+        <a href="index.html" class="btn-primary" id="nav-cta-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          <span data-i18n="policy_back_home">Back to Studio</span>
+        </a>
+
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+<section class="app-page"><div class="container">
+  <div class="app-page-hero">
+    <img class="icon" src="assets/images/aab-studio-icon.png" alt="AAB to APK Studio icon">
+    <div>
+      <span class="status-pill"><span class="en-only">Closed Testing on Google Play</span><span class="ar-only">اختبار مغلق على Google Play</span></span>
+      <h1 style="color:#a78bfa">AAB to APK Studio</h1>
+      <div class="en-only" style="color:var(--text-muted)">Install, convert and build Android packages on your phone</div>
+      <div class="ar-only" style="color:var(--text-muted)">تثبيت وتحويل وبناء حزم أندرويد على هاتفك</div>
+      <div class="pkg" dir="ltr" style="margin-top:8px;font-size:.85rem;color:#a78bfa">Package ID: <strong>com.manootech.studioaab</strong></div>
+    </div>
+  </div>
+  <p class="lead en-only">AAB to APK Studio is a fast all-in-one toolkit for Android developers and power users. Install an AAB straight onto your phone, convert AAB to APK, build an AAB from an APK, install or merge XAPK and APKS bundles, inspect any package and sign with your own key. All processing happens offline on your device.</p>
+  <p class="lead ar-only">AAB to APK Studio استوديو سريع ومتكامل للمطورين والمستخدمين المحترفين. ثبّت ملف AAB مباشرة على هاتفك، حوّل AAB إلى APK، ابنِ AAB من APK، ثبّت أو ادمج حزم XAPK وAPKS، افحص أي حزمة ووقّع بمفتاحك الخاص. كل المعالجة تتم أوفلاين على جهازك.</p>
+  <div class="info-card"><h2><span class="en-only">Key features</span><span class="ar-only">أهم المميزات</span></h2>
+    <ul class="en-only"><li><strong>Install AAB directly:</strong> no PC needed.</li><li><strong>Convert and build:</strong> AAB to APK and APK to AAB.</li><li><strong>XAPK and APKS:</strong> install or merge split packages and inspect their contents.</li><li><strong>Sign with your own key:</strong> keys and files never leave your phone.</li><li><strong>No login:</strong> free to use, contains ads (Google AdMob).</li></ul><ul class="ar-only"><li><strong>تثبيت AAB مباشرة:</strong> بدون كمبيوتر.</li><li><strong>تحويل وبناء:</strong> من AAB إلى APK ومن APK إلى AAB.</li><li><strong>XAPK وAPKS:</strong> تثبيت أو دمج الحزم المقسّمة وفحص محتواها.</li><li><strong>توقيع بمفتاحك:</strong> المفاتيح والملفات لا تغادر هاتفك.</li><li><strong>بدون تسجيل دخول:</strong> مجاني ويحتوي على إعلانات (Google AdMob).</li></ul></div>
+  <div class="info-card"><h2><span class="en-only">Screens &amp; demo videos</span><span class="ar-only">صور وفيديوهات شرح</span></h2>
+    <div class="shots" style="margin-bottom:20px"><img src="assets/images/aab-studio-screen-en.jpg" alt="AAB to APK Studio screen"></div>
+    <div class="vid-grid"><iframe src="https://www.youtube-nocookie.com/embed/MrFi4N395EU" title="demo" loading="lazy" allowfullscreen></iframe><iframe src="https://www.youtube-nocookie.com/embed/MbCEY2E-694" title="demo" loading="lazy" allowfullscreen></iframe></div>
+    <p style="margin-top:14px;color:var(--text-muted)"><a href="https://youtube.com/shorts/MrFi4N395EU" target="_blank" rel="noopener">English demo</a> · <a href="https://youtube.com/shorts/MbCEY2E-694" target="_blank" rel="noopener">الشرح بالعربي</a> · <a href="https://aab-to-apk-studio-privacy.surge.sh/" target="_blank" rel="noopener"><span class="en-only">Privacy Policy</span><span class="ar-only">سياسة الخصوصية</span></a></p></div>
+  <div class="info-card"><h2><span class="en-only">Availability</span><span class="ar-only">التوفر</span></h2>
+    <p class="en-only" style="color:var(--text-muted)">This app is currently in closed testing on Google Play and is not on the public store yet. This page will get a Google Play link when it is released. Questions: <a href="mailto:manootech2030@gmail.com">manootech2030@gmail.com</a></p>
+    <p class="ar-only" style="color:var(--text-muted)">التطبيق حالياً في الاختبار المغلق على Google Play وغير متاح بعد في المتجر العام. سنضيف رابط Google Play هنا عند الإصدار. للتواصل: <a href="mailto:manootech2030@gmail.com">manootech2030@gmail.com</a></p>
+    <div class="actions"><a class="btn-primary" href="index.html#apps"><span class="en-only">All MANOO Tech apps</span><span class="ar-only">كل تطبيقات MANOO Tech</span></a></div></div>
+</div></section>
+</main>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-main-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand-summary">
+          <a href="index.html#home" class="brand-logo" aria-label="MANOO Tech">
+            <img src="assets/images/logo-icon.png" alt="MANOO Tech Logo" class="brand-icon-img">
+            <span class="brand-name">
+              <bdi dir="ltr">MANOO</bdi> <span class="gradient-cyan"><bdi dir="ltr">Tech</bdi></span>
+            </span>
+          </a>
+          <p data-i18n="footer_summary">
+            Architecting next-generation mobile applications and high-impact web platforms. Committed to craftsmanship, performance, and Google Play compliance.
+          </p>
+          <div class="footer-status-pill">
+            <span class="status-indicator-dot"></span>
+            <span style="color: var(--text-dim);" data-i18n="footer_status_label">Studio Status:</span>
+            <strong data-i18n="footer_status_val">Open for Innovation</strong>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_nav_title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html#home" data-i18n="nav_home">Home Overview</a></li>
+            <li><a href="index.html#apps" data-i18n="nav_apps">Flagship Applications</a></li>
+            <li><a href="muziplay-privacy.html">MuziPlay Policy</a></li>
+            <li><a href="privacy.html" data-i18n="nav_general_policy">Studio General Policy</a></li>
+            <li><a href="index.html#contact" data-i18n="nav_contact">Get In Touch</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Flagship Products -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_apps_title">Google Play Apps</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html#app-muziplay">MuziPlay Media Hub</a></li>
+            <li><a href="index.html#app-brixy">Brixy Match-3 Puzzle</a></li>
+            <li><a href="aab-to-apk-studio.html">AAB to APK Studio</a></li>
+            <li><a href="ruzmi.html">RUZMI</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.aistudio.muziplay.xnxfyx" target="_blank" rel="noopener">MuziPlay on Google Play</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.aistudio.brixy.kwxyzq" target="_blank" rel="noopener">Brixy on Google Play</a></li>
+            <li><a href="brixy-privacy.html" style="color: #f472b6;">Brixy Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact info -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_hq_title">Headquarters</h4>
+          <ul class="footer-nav-list">
+            <li><span style="color: var(--text-dim);" data-i18n="footer_email_label">Direct Email:</span></li>
+            <li><a href="mailto:manootech2030@gmail.com" class="gradient-cyan">manootech2030@gmail.com</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div data-i18n="footer_rights">
+          © 2026 MANOO Tech. All rights reserved. Technology &amp; Software Development.
+        </div>
+        <div class="footer-legal-links">
+          <a href="brixy-privacy.html" style="color: #f472b6;">Brixy Privacy Policy</a>
+          <a href="muziplay-privacy.html">MuziPlay Policy</a>
+          <a href="privacy.html" data-i18n="footer_privacy">Studio Policy</a>
+          <a href="privacy.html#terms" data-i18n="footer_terms">Terms of Service</a>
+          <a href="#" data-i18n="footer_top">Back to Top ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Master Script -->
+  <script src="script.js"></script>
+</body>
+</html>
