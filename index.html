@@ -494,13 +494,14 @@
         <!-- APP: ruzmi -->
         <article class="app-showcase-card" id="app-ruzmi">
           <div class="app-card-grid reverse-layout">
-            <div class="app-mockup-wrapper">
+            <div class="app-mockup-wrapper preview-tabs-container">
               <div class="phone-mockup-frame">
                 <div class="phone-camera-island"></div>
-                <div class="phone-inner-screen" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#0ea5e9 0%,#075985 100%);">
-                  <img src="assets/images/ruzmi-icon.png" alt="RUZMI app icon" style="width:62%;height:auto;object-fit:contain;border-radius:28px;">
+                <div class="phone-inner-screen" style="background:#fff;">
+                  <img id="ruzScreenImg" src="assets/images/ruzmi-app-1.jpg" alt="RUZMI app screen" style="object-fit:cover;object-position:top;">
                 </div>
               </div>
+              <div class="preview-tabs"><button type="button" class="preview-tab-btn active" onclick="switchScreenshot('ruzScreenImg', 'assets/images/ruzmi-app-1.jpg', this)"><span>1</span></button><button type="button" class="preview-tab-btn" onclick="switchScreenshot('ruzScreenImg', 'assets/images/ruzmi-app-2.jpg', this)"><span>2</span></button><button type="button" class="preview-tab-btn" onclick="switchScreenshot('ruzScreenImg', 'assets/images/ruzmi-app-3.jpg', this)"><span>3</span></button><button type="button" class="preview-tab-btn" onclick="switchScreenshot('ruzScreenImg', 'assets/images/ruzmi-app-4.jpg', this)"><span>4</span></button><button type="button" class="preview-tab-btn" onclick="switchScreenshot('ruzScreenImg', 'assets/images/ruzmi-app-5.jpg', this)"><span>5</span></button></div>
             </div>
             <div class="app-details-col">
               <div class="app-brand-row">
